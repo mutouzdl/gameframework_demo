@@ -56,6 +56,9 @@
      <Compile Include="Assets\Demo2\Demo2_ProcedureGame.cs" />
      <Compile Include="Assets\Demo2\Demo2_ProcedureLaunch.cs" />
      <Compile Include="Assets\Demo2\Demo2_ProcedureMenu.cs" />
+     <Compile Include="Assets\Demo3\Demo3_ProcedureLaunch.cs" />
+     <Compile Include="Assets\Demo3\Demo3_ProcedureMenu.cs" />
+     <Compile Include="Assets\Demo3\Demo3_UIMenu.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Base\AvoidJIT.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Base\BaseComponent.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Base\GameEntry.cs" />
