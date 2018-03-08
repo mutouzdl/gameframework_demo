@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AFBED23F-80CD-5F7F-0E5F-A2AFFCC6A63D}</ProjectGuid>
+    <ProjectGuid>{86EB9F0A-A517-7308-03C2-0FC553484B5A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>NewAssembly</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -51,11 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Demo3\Demo3_ProcedureLaunch.cs" />
-     <Compile Include="Assets\Demo3\Demo3_ProcedureMenu.cs" />
-     <Compile Include="Assets\Demo3\Demo3_UIMenu.cs" />
-     <None Include="Assets\GameFramework\Libraries\link.xml" />
-     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
+     <Compile Include="Assets\Demo2\Demo2_Controller.cs" />
+     <Compile Include="Assets\Demo2\Demo2_ProcedureGame.cs" />
+     <Compile Include="Assets\Demo2\Demo2_ProcedureLaunch.cs" />
+     <Compile Include="Assets\Demo2\Demo2_ProcedureMenu.cs" />
+     <None Include="Assets\Demo2\Demo2Assembly.asmdef" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -149,16 +149,6 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="UnityGameFramework.Runtime.csproj">
-      <Project>{F38CC243-B91A-156C-EB79-96954B9F6FEA}</Project>      <Name>UnityGameFramework.Runtime</Name>    </ProjectReference>
-    <ProjectReference Include="UnityGameFramework.Editor.csproj">
-      <Project>{ACF3DA97-8F1E-0B22-8AB4-6F7F12E49231}</Project>      <Name>UnityGameFramework.Editor</Name>    </ProjectReference>
-    <ProjectReference Include="Demo1Assembly.csproj">
-      <Project>{7D979141-2033-F3BA-82E5-8DBDBC09BD01}</Project>      <Name>Demo1Assembly</Name>    </ProjectReference>
-    <ProjectReference Include="Demo2Assembly.csproj">
-      <Project>{B9C06ABB-312D-E3D0-211F-886D80EDD057}</Project>      <Name>Demo2Assembly</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

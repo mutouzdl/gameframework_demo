@@ -1,0 +1,8 @@
+{
+    "name": "Demo2Assembly",
+    "references": [
+        "UnityGameFramework.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
