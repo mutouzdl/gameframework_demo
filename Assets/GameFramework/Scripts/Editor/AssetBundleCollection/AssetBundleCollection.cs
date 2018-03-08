@@ -1,6 +1,6 @@
 ﻿//------------------------------------------------------------
 // Game Framework v3.x
-// Copyright © 2013-2017 Jiang Yin. All rights reserved.
+// Copyright © 2013-2018 Jiang Yin. All rights reserved.
 // Homepage: http://gameframework.cn/
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
@@ -454,6 +454,20 @@ namespace UnityGameFramework.Editor.AssetBundleTools
             if (string.IsNullOrEmpty(assetName))
             {
                 return false;
+            }
+
+            Asset[] assetsInAssetBundle = assetBundle.GetAssets();
+            foreach (Asset assetInAssetBundle in assetsInAssetBundle)
+            {
+                if (assetInAssetBundle.Name == assetName)
+                {
+                    continue;
+                }
+
+                if (Path.GetFileName(assetInAssetBundle.Name) == Path.GetFileName(assetName))
+                {
+                    return false;
+                }
             }
 
             bool isScene = assetName.EndsWith(PostfixOfScene);

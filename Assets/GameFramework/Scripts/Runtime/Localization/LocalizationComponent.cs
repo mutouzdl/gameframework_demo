@@ -1,6 +1,6 @@
 ﻿//------------------------------------------------------------
 // Game Framework v3.x
-// Copyright © 2013-2017 Jiang Yin. All rights reserved.
+// Copyright © 2013-2018 Jiang Yin. All rights reserved.
 // Homepage: http://gameframework.cn/
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
@@ -67,7 +67,7 @@ namespace UnityGameFramework.Runtime
         }
 
         /// <summary>
-        /// 获取字典条数。
+        /// 获取字典数量。
         /// </summary>
         public int DictionaryCount
         {

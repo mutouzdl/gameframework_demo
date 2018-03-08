@@ -1,6 +1,6 @@
 ﻿//------------------------------------------------------------
 // Game Framework v3.x
-// Copyright © 2013-2017 Jiang Yin. All rights reserved.
+// Copyright © 2013-2018 Jiang Yin. All rights reserved.
 // Homepage: http://gameframework.cn/
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
@@ -61,7 +61,7 @@ namespace UnityGameFramework.Editor
 
                 EditorGUILayout.BeginVertical("box");
                 {
-                    EditorGUILayout.LabelField("Global Helpers");
+                    EditorGUILayout.LabelField("Global Helpers", EditorStyles.boldLabel);
 
                     int logHelperSelectedIndex = EditorGUILayout.Popup("Log Helper", m_LogHelperTypeNameIndex, m_LogHelperTypeNames);
                     if (logHelperSelectedIndex != m_LogHelperTypeNameIndex)
