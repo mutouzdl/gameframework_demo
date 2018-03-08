@@ -1,5 +1,5 @@
 # gameframework_demo
-基于Unity3D框架Game Framework（http://gameframework.cn）的教程和实例
+基于Unity3D框架Game Framework（ http://gameframework.cn ）的教程和实例
 
 Game Framework 版本：3.1.1
 
