@@ -147,6 +147,12 @@
  <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityGameFramework.Runtime.csproj">
+      <Project>{F38CC243-B91A-156C-EB79-96954B9F6FEA}</Project>      <Name>UnityGameFramework.Runtime</Name>    </ProjectReference>
+    <ProjectReference Include="UnityGameFramework.Editor.csproj">
+      <Project>{ACF3DA97-8F1E-0B22-8AB4-6F7F12E49231}</Project>      <Name>UnityGameFramework.Editor</Name>    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

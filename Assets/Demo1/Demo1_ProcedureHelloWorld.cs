@@ -10,7 +10,6 @@ public class Demo1_ProcedureHelloWorld : ProcedureBase {
 		base.OnEnter (procedureOwner);
 
 		string welcomeMessage = "HelloWorld!";
-		
 		Log.Info (welcomeMessage);
 		Log.Warning (welcomeMessage);
 		Log.Error (welcomeMessage);
