@@ -20,3 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Demo3/Demo3_Menu.unity
     guid: afbd2a70ad4b8d04eb95e7f05f3c9bb0
+  - enabled: 1
+    path: Assets/Demo4/Demo4.unity
+    guid: 6ee21c9463ec81f4f9e59d63973323ab
+  - enabled: 1
+    path: Assets/Demo4/Demo4_Menu.unity
+    guid: 35d29e49229b1ac4f913249cd4648c18

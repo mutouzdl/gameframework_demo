@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{86EB9F0A-A517-7308-03C2-0FC553484B5A}</ProjectGuid>
+    <ProjectGuid>{EE623DA2-B997-75FE-3EF1-3A4A6B68FA6B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>NewAssembly</AssemblyName>
+    <AssemblyName>Demo4Assembly</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -51,11 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Demo2\Demo2_Controller.cs" />
-     <Compile Include="Assets\Demo2\Demo2_ProcedureGame.cs" />
-     <Compile Include="Assets\Demo2\Demo2_ProcedureLaunch.cs" />
-     <Compile Include="Assets\Demo2\Demo2_ProcedureMenu.cs" />
-     <None Include="Assets\Demo2\Demo2Assembly.asmdef" />
+     <Compile Include="Assets\Demo4\Demo4_ProcedureLaunch.cs" />
+     <Compile Include="Assets\Demo4\Demo4_ProcedureMenu.cs" />
+     <Compile Include="Assets\Demo4\Demo4_UIMenu.cs" />
+     <None Include="Assets\Demo4\Demo4Assembly.asmdef" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -149,6 +148,10 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityGameFramework.Runtime.csproj">
+      <Project>{F38CC243-B91A-156C-EB79-96954B9F6FEA}</Project>      <Name>UnityGameFramework.Runtime</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

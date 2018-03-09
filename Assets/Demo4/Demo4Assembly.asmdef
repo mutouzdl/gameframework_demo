@@ -1,0 +1,9 @@
+{
+    "name": "Demo4Assembly",
+    "references": [
+        "UnityGameFramework.Runtime",
+        "UnityGameFramework.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

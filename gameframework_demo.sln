@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameframework_demo", "Unity
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameframework_demo", "Demo1Assembly.csproj", "{7D979141-2033-F3BA-82E5-8DBDBC09BD01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameframework_demo", "Demo4Assembly.csproj", "{EE623DA2-B997-75FE-3EF1-3A4A6B68FA6B}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameframework_demo", "Demo3Assembly.csproj", "{FE63C8DC-8BA4-11A9-2E9C-134EB995B167}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameframework_demo", "UnityGameFramework.Editor.csproj", "{ACF3DA97-8F1E-0B22-8AB4-6F7F12E49231}"
@@ -29,6 +31,10 @@ Global
 		{7D979141-2033-F3BA-82E5-8DBDBC09BD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D979141-2033-F3BA-82E5-8DBDBC09BD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D979141-2033-F3BA-82E5-8DBDBC09BD01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE623DA2-B997-75FE-3EF1-3A4A6B68FA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE623DA2-B997-75FE-3EF1-3A4A6B68FA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE623DA2-B997-75FE-3EF1-3A4A6B68FA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE623DA2-B997-75FE-3EF1-3A4A6B68FA6B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE63C8DC-8BA4-11A9-2E9C-134EB995B167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE63C8DC-8BA4-11A9-2E9C-134EB995B167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE63C8DC-8BA4-11A9-2E9C-134EB995B167}.Release|Any CPU.ActiveCfg = Release|Any CPU
