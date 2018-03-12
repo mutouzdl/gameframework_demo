@@ -10,3 +10,4 @@ Unity3D 版本：2017.3
  - [Demo1-如何创建一个GameFramework项目](https://mutouzdl.gitbooks.io/gameframework/content/ru-men-xiao-shi-li/demo1.html)
  - [Demo2-切换流程和场景](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo2.html)
  - [Demo3-加载UI](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo3.html)
+ - [Demo4-内置事件订阅](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo4.html)
