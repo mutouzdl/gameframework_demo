@@ -1,0 +1,5 @@
+﻿#	配置文件测试		
+#	int	string	int
+#	ID	名称	攻击
+	1	musicvs	1
+	2	mutou	999
