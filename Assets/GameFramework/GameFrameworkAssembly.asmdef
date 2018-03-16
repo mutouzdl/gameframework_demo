@@ -1,3 +1,6 @@
-﻿{
-	"name": "GameFrameworkAssembly"
+{
+    "name": "GameFrameworkAssembly",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": []
 }
