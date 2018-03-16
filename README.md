@@ -12,5 +12,6 @@ Unity3D 版本：2017.3
  - [Demo3-加载UI](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo3.html)
  - [Demo4-内置事件订阅](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo4.html)
  - [Demo5-加载配置文件](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo5.html)
+ - [Demo6-加载实体](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo6.html)
 
 除了StarForce解读系列教程，其他教程的源码都有的，源码按照Demo目录划分，每个Demo目录下都有一份对应教程的PDF文件（和上面的教程是一样的）。
