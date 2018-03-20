@@ -66,6 +66,14 @@
      <Compile Include="Assets\Demo5\DRHero.cs" />
      <Compile Include="Assets\Demo6\Demo6_HeroLogic.cs" />
      <Compile Include="Assets\Demo6\Demo6_ProcedureLaunch.cs" />
+     <Compile Include="Assets\DemoStarForce\Base\GameEntry.Builtin.cs" />
+     <Compile Include="Assets\DemoStarForce\Base\GameEntry.cs" />
+     <Compile Include="Assets\DemoStarForce\Base\GameEntry.Custom.cs" />
+     <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureGame.cs" />
+     <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureLaunch.cs" />
+     <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureMenu.cs" />
+     <Compile Include="Assets\DemoStarForce\UI\DemoSF_MenuFormLogic.cs" />
+     <Compile Include="Assets\DemoStarForce\UI\DemoSF_UGuiGroupHelper.cs" />
      <None Include="Assets\Demo5\Hero.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -26,3 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Demo4/Demo4_Menu.unity
     guid: 35d29e49229b1ac4f913249cd4648c18
+  - enabled: 1
+    path: Assets/DemoStarForce/DemoSF_Launch.unity
+    guid: afc5e699f80fb1942b02fdf46b870329
+  - enabled: 1
+    path: Assets/DemoStarForce/DemoSF_Menu.unity
+    guid: 22051aea2579a72498b639f9ed89f051
+  - enabled: 1
+    path: Assets/DemoStarForce/DemoSF_Game.unity
+    guid: 6546fb4b0956d8743bd2a10b6e83a23d
