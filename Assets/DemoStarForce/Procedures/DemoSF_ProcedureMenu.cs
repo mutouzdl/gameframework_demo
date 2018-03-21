@@ -9,34 +9,49 @@ using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedure
 
 public class DemoSF_ProcedureMenu : ProcedureBase {
     private bool m_StartGame = false;
+    private DemoSF_MenuFormLogic m_MenuForm = null;
 
     protected override void OnEnter (ProcedureOwner procedureOwner) {
         base.OnEnter (procedureOwner);
 
-        GameEntry.Event.Subscribe (OpenUIFormSuccessEventArgs.EventId, OnOpenUIFormSuccess);
+        DemoSF_GameEntry.Event.Subscribe (OpenUIFormSuccessEventArgs.EventId, OnOpenUIFormSuccess);
 
-        GameEntry.UI.OpenUIForm ("Assets/DemoStarForce/UI/UIForms/MenuForm.prefab", "DefaultGroup", this);
+        DemoSF_GameEntry.UI.OpenUIForm ("Assets/DemoStarForce/UI/UIForms/MenuForm.prefab", "DefaultGroup", this);
     }
+
     protected override void OnUpdate (ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds) {
         base.OnUpdate (procedureOwner, elapseSeconds, realElapseSeconds);
 
         if (m_StartGame) {
             m_StartGame = false;
-            
+
             // 卸载所有场景
-            string[] loadedSceneAssetNames = GameEntry.Scene.GetLoadedSceneAssetNames();
-            for (int i = 0; i < loadedSceneAssetNames.Length; i++)
-            {
-                GameEntry.Scene.UnloadScene(loadedSceneAssetNames[i]);
+            string[] loadedSceneAssetNames = DemoSF_GameEntry.Scene.GetLoadedSceneAssetNames ();
+            for (int i = 0; i < loadedSceneAssetNames.Length; i++) {
+                DemoSF_GameEntry.Scene.UnloadScene (loadedSceneAssetNames[i]);
             }
 
             // 切换到游戏场景
-            GameEntry.Scene.LoadScene ("DemoSF_Game", this);
+            DemoSF_GameEntry.Scene.LoadScene ("DemoSF_Game", this);
 
             // 切换到游戏流程
             ChangeState<DemoSF_ProcedureGame> (procedureOwner);
         }
     }
+
+    protected override void OnLeave (ProcedureOwner procedureOwner, bool isShutdown) {
+        base.OnLeave (procedureOwner, isShutdown);
+
+        // 离开时取消事件订阅
+        DemoSF_GameEntry.Event.Unsubscribe (OpenUIFormSuccessEventArgs.EventId, OnOpenUIFormSuccess);
+
+        // 离开时关闭UI
+        if (m_MenuForm != null) {
+            DemoSF_GameEntry.UI.CloseUIForm(m_MenuForm.UIForm);
+            m_MenuForm = null;
+        }
+    }
+
     private void OnOpenUIFormSuccess (object sender, GameEventArgs e) {
         OpenUIFormSuccessEventArgs ne = (OpenUIFormSuccessEventArgs) e;
 
@@ -46,6 +61,8 @@ public class DemoSF_ProcedureMenu : ProcedureBase {
         }
 
         Log.Debug ("UI_Menu：恭喜你，成功地召唤了我。");
+
+        m_MenuForm = (DemoSF_MenuFormLogic)ne.UIForm.Logic;
     }
 
     public void StartGame () {

@@ -9,7 +9,7 @@ public class DemoSF_ProcedureLaunch : ProcedureBase {
 		base.OnEnter (procedureOwner);
 
 		// 切换到菜单场景
-		GameEntry.Scene.LoadScene ("DemoSF_Menu", this);
+		DemoSF_GameEntry.Scene.LoadScene ("DemoSF_Menu", this);
 
 		// 切换到菜单流程
 		ChangeState<DemoSF_ProcedureMenu> (procedureOwner);
