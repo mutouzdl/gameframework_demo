@@ -28,6 +28,9 @@ public class DemoSF_Aircraft : EntityLogic {
             Log.Error ("Aircraft data is invalid.");
             return;
         }
+
+        CachedTransform.localPosition = Vector3.zero;
+        CachedTransform.localScale = Vector3.one;
     }
 
     protected override void OnUpdate (float elapseSeconds, float realElapseSeconds)
