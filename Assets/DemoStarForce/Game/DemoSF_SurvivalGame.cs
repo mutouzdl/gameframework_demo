@@ -20,7 +20,9 @@ public class DemoSF_SurvivalGame {
 
         // 创建实体
 		DemoSF_GameEntry.Entity.ShowEntity<DemoSF_Aircraft>(
-            1, "Assets/DemoStarForce/Prefabs/PlayerShip.prefab", "PlayerGroup");
+            DemoSF_EntityExtension.GenerateSerialId(), 
+            "Assets/DemoStarForce/Prefabs/PlayerShip.prefab", 
+            "PlayerGroup");
 
         GameOver = false;
         m_MyAircraft = null;

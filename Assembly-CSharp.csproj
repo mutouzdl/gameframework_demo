@@ -66,11 +66,13 @@
      <Compile Include="Assets\Demo5\DRHero.cs" />
      <Compile Include="Assets\Demo6\Demo6_HeroLogic.cs" />
      <Compile Include="Assets\Demo6\Demo6_ProcedureLaunch.cs" />
+     <Compile Include="Assets\DemoStarForce\Base\DemoSF_EntityExtension.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_GameEntry.Builtin.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_GameEntry.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_GameEntry.Custom.cs" />
      <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_Aircraft.cs" />
      <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_AircraftData.cs" />
+     <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_Weapon.cs" />
      <Compile Include="Assets\DemoStarForce\Game\DemoSF_SurvivalGame.cs" />
      <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureChangeScene.cs" />
      <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureGame.cs" />
