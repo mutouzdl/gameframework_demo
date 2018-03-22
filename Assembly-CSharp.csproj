@@ -72,9 +72,11 @@
      <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_Aircraft.cs" />
      <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_AircraftData.cs" />
      <Compile Include="Assets\DemoStarForce\Game\DemoSF_SurvivalGame.cs" />
+     <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureChangeScene.cs" />
      <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureGame.cs" />
      <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureLaunch.cs" />
      <Compile Include="Assets\DemoStarForce\Procedures\DemoSF_ProcedureMenu.cs" />
+     <Compile Include="Assets\DemoStarForce\Scene\DemoSF_ScrollableBackground.cs" />
      <Compile Include="Assets\DemoStarForce\UI\DemoSF_MenuFormLogic.cs" />
      <Compile Include="Assets\DemoStarForce\UI\DemoSF_UGuiGroupHelper.cs" />
      <None Include="Assets\Demo5\Hero.txt" />

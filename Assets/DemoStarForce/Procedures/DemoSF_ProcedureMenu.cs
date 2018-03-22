@@ -25,17 +25,9 @@ public class DemoSF_ProcedureMenu : ProcedureBase {
         if (m_StartGame) {
             m_StartGame = false;
 
-            // 卸载所有场景
-            string[] loadedSceneAssetNames = DemoSF_GameEntry.Scene.GetLoadedSceneAssetNames ();
-            for (int i = 0; i < loadedSceneAssetNames.Length; i++) {
-                DemoSF_GameEntry.Scene.UnloadScene (loadedSceneAssetNames[i]);
-            }
-
             // 切换到游戏场景
-            DemoSF_GameEntry.Scene.LoadScene ("DemoSF_Game", this);
-
-            // 切换到游戏流程
-            ChangeState<DemoSF_ProcedureGame> (procedureOwner);
+            procedureOwner.SetData<VarString> ("NextSceneName", "DemoSF_Game");
+            ChangeState<DemoSF_ProcedureChangeScene> (procedureOwner);
         }
     }
 
@@ -47,7 +39,7 @@ public class DemoSF_ProcedureMenu : ProcedureBase {
 
         // 离开时关闭UI
         if (m_MenuForm != null) {
-            DemoSF_GameEntry.UI.CloseUIForm(m_MenuForm.UIForm);
+            DemoSF_GameEntry.UI.CloseUIForm (m_MenuForm.UIForm);
             m_MenuForm = null;
         }
     }
@@ -62,7 +54,7 @@ public class DemoSF_ProcedureMenu : ProcedureBase {
 
         Log.Debug ("UI_Menu：恭喜你，成功地召唤了我。");
 
-        m_MenuForm = (DemoSF_MenuFormLogic)ne.UIForm.Logic;
+        m_MenuForm = (DemoSF_MenuFormLogic) ne.UIForm.Logic;
     }
 
     public void StartGame () {

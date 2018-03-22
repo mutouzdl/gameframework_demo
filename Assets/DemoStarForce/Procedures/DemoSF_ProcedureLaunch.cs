@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using GameFramework.Procedure;
 using UnityEngine;
+using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
 public class DemoSF_ProcedureLaunch : ProcedureBase {
@@ -9,9 +10,7 @@ public class DemoSF_ProcedureLaunch : ProcedureBase {
 		base.OnEnter (procedureOwner);
 
 		// 切换到菜单场景
-		DemoSF_GameEntry.Scene.LoadScene ("DemoSF_Menu", this);
-
-		// 切换到菜单流程
-		ChangeState<DemoSF_ProcedureMenu> (procedureOwner);
+		procedureOwner.SetData<VarString>("NextSceneName", "DemoSF_Menu");
+		ChangeState<DemoSF_ProcedureChangeScene> (procedureOwner);
 	}
 }
