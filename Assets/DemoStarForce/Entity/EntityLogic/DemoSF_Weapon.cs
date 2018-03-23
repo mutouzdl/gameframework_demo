@@ -10,7 +10,7 @@ public class DemoSF_Weapon : EntityLogic {
     private const string AttachPoint = "Weapon Point";
 
     private float m_NextAttackTime = 0f;
-    private float m_AttackInterval = 0.5f;
+    private float m_AttackInterval = 0.2f;
 
     protected override void OnInit (object userData) {
         base.OnInit (userData);
@@ -39,8 +39,10 @@ public class DemoSF_Weapon : EntityLogic {
         m_NextAttackTime = Time.time + m_AttackInterval;
 
         Log.Debug("发射子弹");
-        // DemoSF_GameEntry.Entity.ShowBullet (new BulletData (DemoSF_GameEntry.Entity.GenerateSerialId (), m_WeaponData.BulletId, m_WeaponData.OwnerId, m_WeaponData.OwnerCamp, m_WeaponData.Attack, m_WeaponData.BulletSpeed) {
-        //     Position = CachedTransform.position,
-        // });
+        DemoSF_GameEntry.Entity.ShowEntity<DemoSF_Bullet>(
+            DemoSF_EntityExtension.GenerateSerialId(),
+            "Assets/DemoStarForce/Prefabs/PlayerBolt.prefab",
+            "BulletGroup",
+            CachedTransform.position);
     }
 }
