@@ -38,7 +38,6 @@ public class DemoSF_Weapon : EntityLogic {
 
         m_NextAttackTime = Time.time + m_AttackInterval;
 
-        Log.Debug("发射子弹");
         DemoSF_GameEntry.Entity.ShowEntity<DemoSF_Bullet>(
             DemoSF_EntityExtension.GenerateSerialId(),
             "Assets/DemoStarForce/Prefabs/PlayerBolt.prefab",

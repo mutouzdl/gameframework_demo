@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityGameFramework.Runtime;
 
 public class DemoSF_SurvivalGame {
+    private DemoSF_ScrollableBackground m_SceneBackground = null;
+
     public bool GameOver {
         get;
         protected set;
@@ -18,10 +20,12 @@ public class DemoSF_SurvivalGame {
         DemoSF_GameEntry.Event.Subscribe (ShowEntitySuccessEventArgs.EventId, OnShowEntitySuccess);
         DemoSF_GameEntry.Event.Subscribe (ShowEntityFailureEventArgs.EventId, OnShowEntityFailure);
 
+        m_SceneBackground = Object.FindObjectOfType<DemoSF_ScrollableBackground> ();
+
         // 创建实体
-		DemoSF_GameEntry.Entity.ShowEntity<DemoSF_Aircraft>(
-            DemoSF_EntityExtension.GenerateSerialId(), 
-            "Assets/DemoStarForce/Prefabs/PlayerShip.prefab", 
+        DemoSF_GameEntry.Entity.ShowEntity<DemoSF_Aircraft> (
+            DemoSF_EntityExtension.GenerateSerialId (),
+            "Assets/DemoStarForce/Prefabs/PlayerShip.prefab",
             "PlayerGroup");
 
         GameOver = false;
@@ -38,18 +42,25 @@ public class DemoSF_SurvivalGame {
             GameOver = true;
             return;
         }
-        
+
         m_ElapseSeconds += elapseSeconds;
         if (m_ElapseSeconds >= 1f) {
             m_ElapseSeconds = 0f;
 
-            Log.Debug("显示怪物");
+            float randomPositionX = m_SceneBackground.EnemySpawnBoundary.bounds.min.x + m_SceneBackground.EnemySpawnBoundary.bounds.size.x * (float) Utility.Random.GetRandomDouble ();
+            float randomPositionZ = m_SceneBackground.EnemySpawnBoundary.bounds.min.z + m_SceneBackground.EnemySpawnBoundary.bounds.size.z * (float) Utility.Random.GetRandomDouble ();
+
+            DemoSF_GameEntry.Entity.ShowEntity<DemoSF_Asteroid> (
+                DemoSF_EntityExtension.GenerateSerialId (),
+                "Assets/DemoStarForce/Prefabs/Asteroid01.prefab",
+                "AsteroidGroup",
+                new Vector3 (randomPositionX, 0f, randomPositionZ));
         }
     }
 
     protected void OnShowEntitySuccess (object sender, GameEventArgs e) {
         ShowEntitySuccessEventArgs ne = (ShowEntitySuccessEventArgs) e;
-        Log.Debug("显示战机成功：" + ne);
+        Log.Debug ("显示战机成功：" + ne);
         if (ne.EntityLogicType == typeof (DemoSF_Aircraft)) {
             m_MyAircraft = (DemoSF_Aircraft) ne.Entity.Logic;
         }

@@ -72,6 +72,7 @@
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_GameEntry.Custom.cs" />
      <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_Aircraft.cs" />
      <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_AircraftData.cs" />
+     <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_Asteroid.cs" />
      <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_Bullet.cs" />
      <Compile Include="Assets\DemoStarForce\Entity\EntityLogic\DemoSF_Weapon.cs" />
      <Compile Include="Assets\DemoStarForce\Game\DemoSF_SurvivalGame.cs" />
