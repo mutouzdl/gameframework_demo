@@ -18,6 +18,9 @@ public class DemoSF_Asteroid : EntityLogic {
     protected override void OnShow (object userData) {
         base.OnShow (userData);
 
+        Vector3 pos = (Vector3) userData;
+
+        CachedTransform.position = pos;
         m_RotateSphere = Random.insideUnitSphere;
     }
 
@@ -26,5 +29,18 @@ public class DemoSF_Asteroid : EntityLogic {
 
         CachedTransform.Translate (Vector3.back * m_Speed * elapseSeconds, Space.World);
         CachedTransform.Rotate (m_RotateSphere * m_AngularSpeed * elapseSeconds, Space.Self);
+    }
+
+    private void OnTriggerEnter (Collider other) {
+        EntityLogic entityLogic = other.gameObject.GetComponent<EntityLogic> ();
+
+        if (entityLogic == null) {
+            return;
+        }
+
+        // 这只是示例
+        if (entityLogic is DemoSF_Aircraft) {
+            Log.Error("你正在被攻击！！！");
+        }
     }
 }

@@ -25,4 +25,20 @@ public class DemoSF_Bullet : EntityLogic {
         CachedTransform.Translate (
             Vector3.forward * m_Speed * elapseSeconds, Space.World);
     }
+    
+    private void OnTriggerEnter (Collider other) {
+        EntityLogic entityLogic = other.gameObject.GetComponent<EntityLogic> ();
+
+        if (entityLogic == null) {
+            return;
+        }
+
+        // 这只是示例
+        if (entityLogic is DemoSF_Asteroid) {
+            Log.Warning("攻击敌人！");
+
+            // 消灭敌人
+            DemoSF_GameEntry.Entity.HideEntity(entityLogic.Entity.Id);
+        }
+    }
 }

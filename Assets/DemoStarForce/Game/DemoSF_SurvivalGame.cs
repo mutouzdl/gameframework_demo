@@ -60,7 +60,6 @@ public class DemoSF_SurvivalGame {
 
     protected void OnShowEntitySuccess (object sender, GameEventArgs e) {
         ShowEntitySuccessEventArgs ne = (ShowEntitySuccessEventArgs) e;
-        Log.Debug ("显示战机成功：" + ne);
         if (ne.EntityLogicType == typeof (DemoSF_Aircraft)) {
             m_MyAircraft = (DemoSF_Aircraft) ne.Entity.Logic;
         }
