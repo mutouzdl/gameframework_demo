@@ -66,6 +66,7 @@
      <Compile Include="Assets\Demo5\DRHero.cs" />
      <Compile Include="Assets\Demo6\Demo6_HeroLogic.cs" />
      <Compile Include="Assets\Demo6\Demo6_ProcedureLaunch.cs" />
+     <Compile Include="Assets\Demo7\Demo7_ProcedureLaunch.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_EntityExtension.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_GameEntry.Builtin.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_GameEntry.cs" />
