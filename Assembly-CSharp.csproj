@@ -67,6 +67,12 @@
      <Compile Include="Assets\Demo6\Demo6_HeroLogic.cs" />
      <Compile Include="Assets\Demo6\Demo6_ProcedureLaunch.cs" />
      <Compile Include="Assets\Demo7\Demo7_ProcedureLaunch.cs" />
+     <Compile Include="Assets\Demo8\Demo8_NetworkChannel.cs" />
+     <Compile Include="Assets\Demo8\Demo8_NetworkChannelHelper.cs" />
+     <Compile Include="Assets\Demo8\Demo8_PacketHandler.cs" />
+     <Compile Include="Assets\Demo8\Demo8_PacketHeader.cs" />
+     <Compile Include="Assets\Demo8\Demo8_ProcedureLaunch.cs" />
+     <Compile Include="Assets\Demo8\Demo8_SocketServer.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_EntityExtension.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_GameEntry.Builtin.cs" />
      <Compile Include="Assets\DemoStarForce\Base\DemoSF_GameEntry.cs" />
@@ -177,6 +183,12 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="protobuf-net">
+ <HintPath>C:/Users/mutou/Documents/Unity/gameframework_demo/Assets/Libraries/protobuf-net.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>C:/Users/mutou/Documents/Unity/gameframework_demo/Assets/Libraries/LitJson.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

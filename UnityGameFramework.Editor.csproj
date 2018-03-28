@@ -206,6 +206,12 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
+ <Reference Include="protobuf-net">
+ <HintPath>C:/Users/mutou/Documents/Unity/gameframework_demo/Assets/Libraries/protobuf-net.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>C:/Users/mutou/Documents/Unity/gameframework_demo/Assets/Libraries/LitJson.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityGameFramework.Runtime.csproj">
