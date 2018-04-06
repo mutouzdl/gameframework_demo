@@ -618,6 +618,7 @@ namespace UnityGameFramework.Runtime
         /// </summary>
         public void InitResources()
         {
+            Log.Debug("InitResources:", m_ResourceManager);
             m_ResourceManager.InitResources();
         }
 

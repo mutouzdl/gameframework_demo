@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameframework_demo", "Unity
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameframework_demo", "UnityGameFramework.Editor.csproj", "{ACF3DA97-8F1E-0B22-8AB4-6F7F12E49231}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameframework_demo", "Assembly-CSharp-Editor.csproj", "{50467BFD-A60C-9DC7-55EA-EB059742CCA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{ACF3DA97-8F1E-0B22-8AB4-6F7F12E49231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACF3DA97-8F1E-0B22-8AB4-6F7F12E49231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACF3DA97-8F1E-0B22-8AB4-6F7F12E49231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50467BFD-A60C-9DC7-55EA-EB059742CCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50467BFD-A60C-9DC7-55EA-EB059742CCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50467BFD-A60C-9DC7-55EA-EB059742CCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50467BFD-A60C-9DC7-55EA-EB059742CCA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

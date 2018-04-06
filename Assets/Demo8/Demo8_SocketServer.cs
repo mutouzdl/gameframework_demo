@@ -1,11 +1,17 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using GameFramework;
+using GameFramework.Network;
+using protobuf_net;
+using ProtoBuf;
+using ProtoBuf.Meta;
+using StarForce;
 
 public class Demo8_SocketServer {
     // 创建一个和客户端通信的套接字
@@ -50,7 +56,7 @@ public class Demo8_SocketServer {
                 connection = socketwatch.Accept ();
             } catch (Exception ex) {
                 //提示套接字监听异常     
-                Log.Debug(ex.Message);
+                Log.Debug (ex.Message);
                 break;
             }
 
@@ -61,7 +67,7 @@ public class Demo8_SocketServer {
             //客户端网络结点号  
             string remoteEndPoint = connection.RemoteEndPoint.ToString ();
             //显示与客户端连接情况
-            Log.Debug("成功与" + remoteEndPoint + "客户端建立连接！");
+            Log.Debug ("成功与" + remoteEndPoint + "客户端建立连接！");
             //添加客户端信息  
             clientConnectionItems.Add (remoteEndPoint, connection);
 
@@ -94,18 +100,30 @@ public class Demo8_SocketServer {
 
                 //将机器接受到的字节数组转换为人可以读懂的字符串     
                 string strSRecMsg = Encoding.UTF8.GetString (arrServerRecMsg, 0, length);
+                //Person myRequest = Serializer.DeserializeWithLengthPrefix<Person> (arrServerRecMsg, PrefixStyle.Base128);
 
+                Type packetType = typeof (Person);
+                Person packet = (Person) RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
+                    new MemoryStream (arrServerRecMsg), ReferencePool.Acquire (packetType), packetType, PrefixStyle.Fixed32, 0);
                 //将发送的字符串信息附加到文本框txtMsg上     
-                Log.Debug("收到客户端消息:" + strSRecMsg);
+                Log.Debug ("收到客户端消息:" + packet.Name);
 
-                socketServer.Send (Encoding.UTF8.GetBytes ("你好，客户端"));
+                Address myResponse = new Address ();
+                myResponse.Line1 = "接收服务端消息";
+                using (MemoryStream memoryStream = new MemoryStream ()) {
+                    CSPacketHeader packetHeader = ReferencePool.Acquire<CSPacketHeader> ();
+                    Serializer.Serialize (memoryStream, packetHeader);
+                    Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Base128);
+                    ReferencePool.Release (packetHeader);
+                    socketServer.Send (memoryStream.ToArray ());
+                }
             } catch (Exception ex) {
                 clientConnectionItems.Remove (socketServer.RemoteEndPoint.ToString ());
 
-                Log.Debug("Client Count:" + clientConnectionItems.Count);
+                Log.Debug ("Client Count:" + clientConnectionItems.Count);
 
                 //提示套接字监听异常  
-                Log.Debug("客户端" + socketServer.RemoteEndPoint + "已经中断连接" + "\r\n" + ex.Message + "\r\n" + ex.StackTrace + "\r\n");
+                Log.Debug ("客户端" + socketServer.RemoteEndPoint + "已经中断连接" + "\r\n" + ex.Message + "\r\n" + ex.StackTrace + "\r\n");
                 //关闭之前accept出来的和客户端进行通信的套接字 
                 socketServer.Close ();
                 break;
