@@ -15,7 +15,7 @@ Unity3D 版本：2017.3
  - [Demo6-加载实体](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo6.html)
  - [StarForce无封装简陋不完全版](https://mutouzdl.gitbooks.io/gameframework/content/gamedemo/simplestarforce.html)
  - [Demo7-发起Web请求](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo7.html)
- - Demo8，暂时没有写完，写研究Demo9去了，抱歉。
+ - Demo8，暂时没有写完，先研究Demo9去了，抱歉。
  - [Demo9-AssetBundle打包的一些坑](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo9.html)
  
 GitBook很不稳定，如果访问不了，可以到我的博客查看教程：[笨木头与游戏开发 Game FrameWork](http://www.benmutou.com/archives/category/unity3d/game-framework)
