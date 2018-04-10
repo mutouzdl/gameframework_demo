@@ -12,25 +12,15 @@ using StarForce;
 
 namespace protobuf_net {
     [Serializable, ProtoContract(Name = @"Person")]
-    public class Person : SCPacketBase {
+    public class Person : CSPacketBase {
         public override int Id {
             get {
                 return 5;
             }
         }
 
-        public override PacketType PacketType
-        {
-            get {
-             return PacketType.ClientToServer;   
-            }
-        }
-
-        [ProtoMember (2)]
+        [ProtoMember (1)]
         public string Name { get; set; }
-
-        [ProtoMember (3)]
-        public Address Address { get; set; }
 
         public override void Clear() {
 
@@ -44,17 +34,10 @@ namespace protobuf_net {
                 return 10;
             }
         }
-        public override PacketType PacketType
-        {
-            get {
-             return PacketType.ServerToClient;   
-            }
-        }
+
         [ProtoMember (1)]
         public string Line1 { get; set; }
 
-        [ProtoMember (2)]
-        public string Line2 { get; set; }
         public override void Clear() {
             
         }

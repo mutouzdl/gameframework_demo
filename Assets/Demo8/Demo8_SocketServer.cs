@@ -108,15 +108,23 @@ public class Demo8_SocketServer {
                 //将发送的字符串信息附加到文本框txtMsg上     
                 Log.Debug ("收到客户端消息:" + packet.Name);
 
-                Address myResponse = new Address ();
-                myResponse.Line1 = "接收服务端消息";
+                Address address = new Address ();
+                address.Line1 = "接收服务端消息";
+                byte[] datas = null;
                 using (MemoryStream memoryStream = new MemoryStream ()) {
-                    CSPacketHeader packetHeader = ReferencePool.Acquire<CSPacketHeader> ();
+                    SCPacketHeader packetHeader = ReferencePool.Acquire<SCPacketHeader> ();
+                    packetHeader.PacketLength = 27;
+                    packetHeader.Id = address.Id;
                     Serializer.Serialize (memoryStream, packetHeader);
-                    Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Base128);
+                    Serializer.SerializeWithLengthPrefix (memoryStream, address, PrefixStyle.Fixed32);
+
                     ReferencePool.Release (packetHeader);
-                    socketServer.Send (memoryStream.ToArray ());
+
+                    datas = memoryStream.ToArray ();
+                    Log.Debug("memoryStream:" + memoryStream.Length);
                 }
+                socketServer.Send (datas);
+                socketServer.Close ();
             } catch (Exception ex) {
                 clientConnectionItems.Remove (socketServer.RemoteEndPoint.ToString ());
 

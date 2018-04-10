@@ -76,6 +76,7 @@
      <Compile Include="Assets\Demo8\Network\Packet\CSHeartBeat.cs" />
      <Compile Include="Assets\Demo8\Network\Packet\SCHeartBeat.cs" />
      <Compile Include="Assets\Demo8\Network\PacketBase.cs" />
+     <Compile Include="Assets\Demo8\Network\PacketHandler\Demo8_AddressPacketHandler.cs" />
      <Compile Include="Assets\Demo8\Network\PacketHandler\SCHeartBeatHandler.cs" />
      <Compile Include="Assets\Demo8\Network\PacketHandlerBase.cs" />
      <Compile Include="Assets\Demo8\Network\PacketHeaderBase.cs" />

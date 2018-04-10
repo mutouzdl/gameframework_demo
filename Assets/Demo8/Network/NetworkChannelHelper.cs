@@ -7,6 +7,7 @@ using GameFramework.Event;
 using GameFramework.Network;
 using ProtoBuf;
 using ProtoBuf.Meta;
+using protobuf_net;
 using UnityGameFramework.Runtime;
 
 namespace StarForce {
@@ -132,7 +133,17 @@ namespace StarForce {
         public IPacketHeader DeserializePacketHeader (Stream source, out object customErrorData) {
             // 注意：此函数并不在主线程调用！
             customErrorData = null;
-            return (IPacketHeader) RuntimeTypeModel.Default.Deserialize (source, ReferencePool.Acquire<SCPacketHeader> (), typeof (SCPacketHeader));
+
+            // SCPacketHeader header = (SCPacketHeader)RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
+            // 	source, ReferencePool.Acquire <SCPacketHeader>(), typeof(SCPacketHeader), PrefixStyle.Fixed32, 0);
+
+            Log.Debug("source:" + source.Length);
+            return new SCPacketHeader() {
+                PacketLength = 0,
+                Id = 10,
+            };
+            // return Serializer.Deserialize<SCPacketHeader>(source);
+            //return (IPacketHeader) RuntimeTypeModel.Default.Deserialize (source, ReferencePool.Acquire<SCPacketHeader> (), typeof (SCPacketHeader));
         }
 
         /// <summary>
@@ -143,6 +154,8 @@ namespace StarForce {
         /// <param name="customErrorData">用户自定义错误数据。</param>
         /// <returns>反序列化后的消息包。</returns>
         public Packet DeserializePacket (IPacketHeader packetHeader, Stream source, out object customErrorData) {
+            Log.Debug ("DeserializePacket!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! len:" + source.Length);
+
             // 注意：此函数并不在主线程调用！
             customErrorData = null;
 
@@ -151,6 +164,7 @@ namespace StarForce {
                 Log.Warning ("Packet header is invalid.");
                 return null;
             }
+            Log.Debug("DE scPacketHeader:" + scPacketHeader.Id + "_" + scPacketHeader.PacketLength + "_" + scPacketHeader.PacketType);
 
             Packet packet = null;
             if (scPacketHeader.IsValid) {
@@ -166,6 +180,8 @@ namespace StarForce {
             }
 
             ReferencePool.Release (scPacketHeader);
+
+            Log.Debug("DE packet:" + ((Address)packet).Line1);
             return packet;
         }
 

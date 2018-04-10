@@ -1,5 +1,8 @@
-﻿namespace StarForce
+﻿using ProtoBuf;
+
+namespace StarForce
 {
+    [ProtoContract]
     public sealed class SCPacketHeader : PacketHeaderBase
     {
         public override PacketType PacketType
