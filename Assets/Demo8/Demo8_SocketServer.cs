@@ -99,7 +99,7 @@ public class Demo8_SocketServer {
                 int length = socketServer.Receive (arrServerRecMsg);
 
                 //将机器接受到的字节数组转换为人可以读懂的字符串     
-                string strSRecMsg = Encoding.UTF8.GetString (arrServerRecMsg, 0, length);
+                // string strSRecMsg = Encoding.UTF8.GetString (arrServerRecMsg, 0, length);
                 //Person myRequest = Serializer.DeserializeWithLengthPrefix<Person> (arrServerRecMsg, PrefixStyle.Base128);
 
                 Type packetType = typeof (Person);
@@ -108,21 +108,23 @@ public class Demo8_SocketServer {
                 //将发送的字符串信息附加到文本框txtMsg上     
                 Log.Debug ("收到客户端消息:" + packet.Name);
 
-                Address address = new Address ();
-                address.Line1 = "接收服务端消息";
+                Address myResponse = new Address ();
+                myResponse.Line1 = "Server:测试地址！";
                 byte[] datas = null;
                 using (MemoryStream memoryStream = new MemoryStream ()) {
                     SCPacketHeader packetHeader = ReferencePool.Acquire<SCPacketHeader> ();
-                    packetHeader.PacketLength = 27;
-                    packetHeader.Id = address.Id;
                     Serializer.Serialize (memoryStream, packetHeader);
-                    Serializer.SerializeWithLengthPrefix (memoryStream, address, PrefixStyle.Fixed32);
+                    Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Fixed32);
 
                     ReferencePool.Release (packetHeader);
 
                     datas = memoryStream.ToArray ();
-                    Log.Debug("memoryStream:" + memoryStream.Length);
                 }
+
+        //         Address pack = (Address) RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
+        //             new MemoryStream (datas), ReferencePool.Acquire<Address> (), typeof (Address), PrefixStyle.Fixed32, 0);
+		// Log.Debug("pack:" + pack.Line1);
+                    
                 socketServer.Send (datas);
                 socketServer.Close ();
             } catch (Exception ex) {

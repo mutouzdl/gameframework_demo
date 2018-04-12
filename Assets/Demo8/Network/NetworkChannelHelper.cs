@@ -131,19 +131,20 @@ namespace StarForce {
         /// <param name="customErrorData">用户自定义错误数据。</param>
         /// <returns></returns>
         public IPacketHeader DeserializePacketHeader (Stream source, out object customErrorData) {
+            Log.Debug("DeserializePacketHeader!!!!!!!!!!!!!!");
             // 注意：此函数并不在主线程调用！
             customErrorData = null;
 
             // SCPacketHeader header = (SCPacketHeader)RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
             // 	source, ReferencePool.Acquire <SCPacketHeader>(), typeof(SCPacketHeader), PrefixStyle.Fixed32, 0);
 
-            Log.Debug("source:" + source.Length);
-            return new SCPacketHeader() {
-                PacketLength = 0,
-                Id = 10,
-            };
+            // Log.Debug("source:" + source.Length);
+            // return new SCPacketHeader() {
+            //     PacketLength = 24,
+            //     Id = 10,
+            // };
             // return Serializer.Deserialize<SCPacketHeader>(source);
-            //return (IPacketHeader) RuntimeTypeModel.Default.Deserialize (source, ReferencePool.Acquire<SCPacketHeader> (), typeof (SCPacketHeader));
+            return (IPacketHeader) RuntimeTypeModel.Default.Deserialize (source, ReferencePool.Acquire<SCPacketHeader> (), typeof (SCPacketHeader));
         }
 
         /// <summary>
@@ -181,7 +182,6 @@ namespace StarForce {
 
             ReferencePool.Release (scPacketHeader);
 
-            Log.Debug("DE packet:" + ((Address)packet).Line1);
             return packet;
         }
 

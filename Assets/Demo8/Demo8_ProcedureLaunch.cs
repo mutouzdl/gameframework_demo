@@ -14,6 +14,7 @@ using ProtoBuf;
 using ProtoBuf.Meta;
 
 public class Demo8_ProcedureLaunch : ProcedureBase {
+	public static bool isClose = false;
 	private GameFramework.Network.INetworkChannel m_Channel;
 	private NetworkChannelHelper m_NetworkChannelHelper;
 
@@ -30,23 +31,23 @@ public class Demo8_ProcedureLaunch : ProcedureBase {
 
 		Event.Subscribe (NetworkConnectedEventArgs.EventId, OnConnected);
 
-		Address myResponse = new Address ();
-		myResponse.Line1 = "测试地址！";
-		byte[] datas = null;
-		using (MemoryStream memoryStream = new MemoryStream ()) {
-			SCPacketHeader packetHeader = ReferencePool.Acquire<SCPacketHeader> ();
-			Serializer.Serialize (memoryStream, packetHeader);
-			Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Fixed32);
+		// Address myResponse = new Address ();
+		// myResponse.Line1 = "测试地址！";
+		// byte[] datas = null;
+		// using (MemoryStream memoryStream = new MemoryStream ()) {
+		// 	SCPacketHeader packetHeader = ReferencePool.Acquire<SCPacketHeader> ();
+		// 	Serializer.Serialize (memoryStream, packetHeader);
+		// 	Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Fixed32);
 
-			ReferencePool.Release (packetHeader);
+		// 	ReferencePool.Release (packetHeader);
 
-			datas = memoryStream.ToArray ();
-		}
+		// 	datas = memoryStream.ToArray ();
+		// }
 
-		// SCPacketHeader pack = (SCPacketHeader)RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
-		// 	new MemoryStream (datas), ReferencePool.Acquire <SCPacketHeader>(), typeof(SCPacketHeader), PrefixStyle.Fixed32, 0);
+		// Address pack = (Address)RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
+		// 	new MemoryStream (datas), ReferencePool.Acquire <Address>(), typeof(Address), PrefixStyle.Fixed32, 0);
 
-		// // Log.Debug("pack:" + pack.PacketType);
+		// Log.Debug("pack:" + pack.Line1);
 		// RuntimeTypeModel.Default.Deserialize (new MemoryStream (datas),
 		// 	ReferencePool.Acquire<SCPacketHeader> (), typeof (SCPacketHeader));
 
@@ -62,8 +63,10 @@ public class Demo8_ProcedureLaunch : ProcedureBase {
 		m_Channel.Connect (IPAddress.Parse ("127.0.0.1"), 8098);
 	}
 
-	protected override void OnLeave (ProcedureOwner procedureOwner, bool isShutdown) {
-		m_Channel.Close ();
+	protected override void OnUpdate (ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds) {
+		if (isClose) {
+			m_Channel.Close ();
+		}
 	}
 
 	private void OnConnected (object sender, GameEventArgs e) {

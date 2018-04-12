@@ -13,5 +13,7 @@ public class Demo8_AddressPacketHandler : PacketHandlerBase {
     public override void Handle (object sender, Packet packet) {
         Address packetImpl = (Address) packet;
         Log.Info ("Receive packet '{0}'.", packetImpl.Line1);
+
+        Demo8_ProcedureLaunch.isClose = true;
     }
 }
