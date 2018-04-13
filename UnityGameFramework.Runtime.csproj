@@ -317,6 +317,9 @@
  <Reference Include="protobuf-net">
  <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/Libraries/protobuf-net.dll</HintPath>
  </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/UnityGameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
@@ -338,9 +341,10 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/UnityGameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="GameFramework.csproj">
+      <Project>{2B21235E-FFF6-1173-07BA-0198D0FE60EF}</Project>      <Name>GameFramework</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
