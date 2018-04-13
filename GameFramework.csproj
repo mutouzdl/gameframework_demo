@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{2B21235E-FFF6-1173-07BA-0198D0FE60EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>GameFramework</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_1;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GameFramework\Base\EventPool\BaseEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Base\EventPool\EventPool.cs" />
+     <Compile Include="Assets\GameFramework\Base\EventPool\EventPool.Event.cs" />
+     <Compile Include="Assets\GameFramework\Base\EventPool\EventPoolMode.cs" />
+     <Compile Include="Assets\GameFramework\Base\GameFrameworkAction.cs" />
+     <Compile Include="Assets\GameFramework\Base\GameFrameworkEntry.cs" />
+     <Compile Include="Assets\GameFramework\Base\GameFrameworkEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Base\GameFrameworkException.cs" />
+     <Compile Include="Assets\GameFramework\Base\GameFrameworkFunc.cs" />
+     <Compile Include="Assets\GameFramework\Base\GameFrameworkModule.cs" />
+     <Compile Include="Assets\GameFramework\Base\Log\Log.cs" />
+     <Compile Include="Assets\GameFramework\Base\Log\Log.ILogHelper.cs" />
+     <Compile Include="Assets\GameFramework\Base\Log\LogLevel.cs" />
+     <Compile Include="Assets\GameFramework\Base\ReferencePool\IReference.cs" />
+     <Compile Include="Assets\GameFramework\Base\ReferencePool\ReferencePool.cs" />
+     <Compile Include="Assets\GameFramework\Base\ReferencePool\ReferencePool.ReferenceCollection.cs" />
+     <Compile Include="Assets\GameFramework\Base\ReferencePool\ReferencePoolInfo.cs" />
+     <Compile Include="Assets\GameFramework\Base\TaskPool\ITask.cs" />
+     <Compile Include="Assets\GameFramework\Base\TaskPool\ITaskAgent.cs" />
+     <Compile Include="Assets\GameFramework\Base\TaskPool\TaskPool.cs" />
+     <Compile Include="Assets\GameFramework\Base\Variable\GenericVariable.cs" />
+     <Compile Include="Assets\GameFramework\Base\Variable\Variable.cs" />
+     <Compile Include="Assets\GameFramework\Config\ConfigManager.ConfigData.cs" />
+     <Compile Include="Assets\GameFramework\Config\ConfigManager.cs" />
+     <Compile Include="Assets\GameFramework\Config\IConfigHelper.cs" />
+     <Compile Include="Assets\GameFramework\Config\IConfigManager.cs" />
+     <Compile Include="Assets\GameFramework\Config\LoadConfigDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Config\LoadConfigFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Config\LoadConfigSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Config\LoadConfigUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\DataNode\DataNodeManager.cs" />
+     <Compile Include="Assets\GameFramework\DataNode\DataNodeManager.DataNode.cs" />
+     <Compile Include="Assets\GameFramework\DataNode\IDataNode.cs" />
+     <Compile Include="Assets\GameFramework\DataNode\IDataNodeManager.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\DataTableBase.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\DataTableManager.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\DataTableManager.DataTable.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\IDataRow.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\IDataTable.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\IDataTableHelper.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\IDataTableManager.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\LoadDataTableDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\LoadDataTableFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\LoadDataTableSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\DataTable\LoadDataTableUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Debugger\DebuggerManager.cs" />
+     <Compile Include="Assets\GameFramework\Debugger\DebuggerManager.DebuggerWindowGroup.cs" />
+     <Compile Include="Assets\GameFramework\Debugger\IDebuggerManager.cs" />
+     <Compile Include="Assets\GameFramework\Debugger\IDebuggerWindow.cs" />
+     <Compile Include="Assets\GameFramework\Debugger\IDebuggerWindowGroup.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadAgentHelperCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadAgentHelperErrorEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadAgentHelperUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadManager.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadAgent.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadCounter.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadCounter.DownloadCounterNode.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadTask.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadTaskStatus.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadStartEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Download\DownloadUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Download\IDownloadAgentHelper.cs" />
+     <Compile Include="Assets\GameFramework\Download\IDownloadManager.cs" />
+     <Compile Include="Assets\GameFramework\Entity\EntityManager.cs" />
+     <Compile Include="Assets\GameFramework\Entity\EntityManager.EntityGroup.cs" />
+     <Compile Include="Assets\GameFramework\Entity\EntityManager.EntityInfo.cs" />
+     <Compile Include="Assets\GameFramework\Entity\EntityManager.EntityInstanceObject.cs" />
+     <Compile Include="Assets\GameFramework\Entity\EntityManager.EntityStatus.cs" />
+     <Compile Include="Assets\GameFramework\Entity\EntityManager.ShowEntityInfo.cs" />
+     <Compile Include="Assets\GameFramework\Entity\HideEntityCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Entity\IEntity.cs" />
+     <Compile Include="Assets\GameFramework\Entity\IEntityGroup.cs" />
+     <Compile Include="Assets\GameFramework\Entity\IEntityGroupHelper.cs" />
+     <Compile Include="Assets\GameFramework\Entity\IEntityHelper.cs" />
+     <Compile Include="Assets\GameFramework\Entity\IEntityManager.cs" />
+     <Compile Include="Assets\GameFramework\Entity\ShowEntityDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Entity\ShowEntityFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Entity\ShowEntitySuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Entity\ShowEntityUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Event\EventManager.cs" />
+     <Compile Include="Assets\GameFramework\Event\GameEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Event\IEventManager.cs" />
+     <Compile Include="Assets\GameFramework\Fsm\Fsm.cs" />
+     <Compile Include="Assets\GameFramework\Fsm\FsmBase.cs" />
+     <Compile Include="Assets\GameFramework\Fsm\FsmEventHandler.cs" />
+     <Compile Include="Assets\GameFramework\Fsm\FsmManager.cs" />
+     <Compile Include="Assets\GameFramework\Fsm\FsmState.cs" />
+     <Compile Include="Assets\GameFramework\Fsm\IFsm.cs" />
+     <Compile Include="Assets\GameFramework\Fsm\IFsmManager.cs" />
+     <Compile Include="Assets\GameFramework\Localization\ILocalizationHelper.cs" />
+     <Compile Include="Assets\GameFramework\Localization\ILocalizationManager.cs" />
+     <Compile Include="Assets\GameFramework\Localization\Language.cs" />
+     <Compile Include="Assets\GameFramework\Localization\LoadDictionaryDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Localization\LoadDictionaryFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Localization\LoadDictionarySuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Localization\LoadDictionaryUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Localization\LocalizationManager.cs" />
+     <Compile Include="Assets\GameFramework\Network\INetworkChannel.cs" />
+     <Compile Include="Assets\GameFramework\Network\INetworkChannelHelper.cs" />
+     <Compile Include="Assets\GameFramework\Network\INetworkManager.cs" />
+     <Compile Include="Assets\GameFramework\Network\IPacketHandler.cs" />
+     <Compile Include="Assets\GameFramework\Network\IPacketHeader.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkClosedEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkConnectedEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkCustomErrorEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkErrorCode.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkErrorEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkManager.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.HeartBeatState.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.ReceiveState.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.SocketUserData.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkMissHeartBeatEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkSendPacketEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Network\NetworkType.cs" />
+     <Compile Include="Assets\GameFramework\Network\Packet.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\IObjectPool.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\IObjectPoolManager.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\ObjectBase.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\ObjectInfo.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\ObjectPoolBase.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\ObjectPoolManager.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\ObjectPoolManager.Object.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\ObjectPoolManager.ObjectPool.cs" />
+     <Compile Include="Assets\GameFramework\ObjectPool\ReleaseObjectFilterCallback.cs" />
+     <Compile Include="Assets\GameFramework\Procedure\IProcedureManager.cs" />
+     <Compile Include="Assets\GameFramework\Procedure\ProcedureBase.cs" />
+     <Compile Include="Assets\GameFramework\Procedure\ProcedureManager.cs" />
+     <Compile Include="Assets\GameFramework\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\CheckVersionListResult.cs" />
+     <Compile Include="Assets\GameFramework\Resource\DecryptResourceCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ILoadResourceAgentHelper.cs" />
+     <Compile Include="Assets\GameFramework\Resource\IResourceHelper.cs" />
+     <Compile Include="Assets\GameFramework\Resource\IResourceManager.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadAssetCallbacks.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadAssetDependencyAssetCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadAssetFailureCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadAssetSuccessCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadAssetUpdateCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadBytesCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperErrorEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperLoadCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperParseBytesCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperReadBytesCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperReadFileCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadResourceProgress.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadResourceStatus.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadSceneCallbacks.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadSceneDependencyAssetCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadSceneFailureCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadSceneSuccessCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\LoadSceneUpdateCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceCheckCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceInitCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.AssetDependencyInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.AssetInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.LoadType.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ReadWriteResourceInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.CheckStatus.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.LocalVersionInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.RemoteVersionInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceGroup.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceIniter.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.AssetObject.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadAssetTask.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadDependencyAssetTask.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceAgent.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceAgent.WaitingType.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceTaskBase.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadSceneTask.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.ResourceObject.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceName.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceNameComparer.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceUpdater.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceUpdater.UpdateInfo.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceManager.VersionListProcessor.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceMode.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateAllCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateChangedEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateStartEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\UnloadSceneCallbacks.cs" />
+     <Compile Include="Assets\GameFramework\Resource\UnloadSceneFailureCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\UnloadSceneSuccessCallback.cs" />
+     <Compile Include="Assets\GameFramework\Resource\VersionListUpdateFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Resource\VersionListUpdateSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scene\ISceneManager.cs" />
+     <Compile Include="Assets\GameFramework\Scene\LoadSceneDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scene\LoadSceneFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scene\LoadSceneSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scene\LoadSceneUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scene\SceneManager.cs" />
+     <Compile Include="Assets\GameFramework\Scene\UnloadSceneFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scene\UnloadSceneSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Setting\ISettingHelper.cs" />
+     <Compile Include="Assets\GameFramework\Setting\ISettingManager.cs" />
+     <Compile Include="Assets\GameFramework\Setting\SettingManager.cs" />
+     <Compile Include="Assets\GameFramework\Sound\Constant.cs" />
+     <Compile Include="Assets\GameFramework\Sound\ISoundAgent.cs" />
+     <Compile Include="Assets\GameFramework\Sound\ISoundAgentHelper.cs" />
+     <Compile Include="Assets\GameFramework\Sound\ISoundGroup.cs" />
+     <Compile Include="Assets\GameFramework\Sound\ISoundGroupHelper.cs" />
+     <Compile Include="Assets\GameFramework\Sound\ISoundHelper.cs" />
+     <Compile Include="Assets\GameFramework\Sound\ISoundManager.cs" />
+     <Compile Include="Assets\GameFramework\Sound\PlaySoundDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Sound\PlaySoundErrorCode.cs" />
+     <Compile Include="Assets\GameFramework\Sound\PlaySoundFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Sound\PlaySoundParams.cs" />
+     <Compile Include="Assets\GameFramework\Sound\PlaySoundSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Sound\PlaySoundUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Sound\ResetSoundAgentEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Sound\SoundManager.cs" />
+     <Compile Include="Assets\GameFramework\Sound\SoundManager.PlaySoundInfo.cs" />
+     <Compile Include="Assets\GameFramework\Sound\SoundManager.SoundAgent.cs" />
+     <Compile Include="Assets\GameFramework\Sound\SoundManager.SoundGroup.cs" />
+     <Compile Include="Assets\GameFramework\UI\CloseUIFormCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\UI\IUIForm.cs" />
+     <Compile Include="Assets\GameFramework\UI\IUIFormHelper.cs" />
+     <Compile Include="Assets\GameFramework\UI\IUIGroup.cs" />
+     <Compile Include="Assets\GameFramework\UI\IUIGroupHelper.cs" />
+     <Compile Include="Assets\GameFramework\UI\IUIManager.cs" />
+     <Compile Include="Assets\GameFramework\UI\OpenUIFormDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\UI\OpenUIFormFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\UI\OpenUIFormSuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\UI\OpenUIFormUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\UI\UIManager.cs" />
+     <Compile Include="Assets\GameFramework\UI\UIManager.OpenUIFormInfo.cs" />
+     <Compile Include="Assets\GameFramework\UI\UIManager.UIFormInstanceObject.cs" />
+     <Compile Include="Assets\GameFramework\UI\UIManager.UIGroup.cs" />
+     <Compile Include="Assets\GameFramework\UI\UIManager.UIGroup.UIFormInfo.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Assembly.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Converter.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Encryption.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Json.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Json.IJsonHelper.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Nullable.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Path.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Profiler.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Profiler.IProfilerHelper.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Random.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Text.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Utility.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Verifier.Crc32.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Verifier.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Zip.cs" />
+     <Compile Include="Assets\GameFramework\Utility\Zip.IZipHelper.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\IWebRequestAgentHelper.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\IWebRequestManager.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestAgentHelperCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestAgentHelperErrorEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestManager.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestManager.WebRequestAgent.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestManager.WebRequestTask.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestManager.WebRequestTaskStatus.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestStartEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\WebRequest\WebRequestSuccessEventArgs.cs" />
+     <None Include="Assets\GameFramework\GameFramework.asmdef" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIAutomation">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/Libraries/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="protobuf-net">
+ <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/Libraries/protobuf-net.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/Users/mutou/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/UnityGameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
