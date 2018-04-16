@@ -14,6 +14,7 @@ using ProtoBuf.Meta;
 using StarForce;
 
 public class Demo8_SocketServer {
+    public static bool isOpen = true;
     // 创建一个和客户端通信的套接字
     static Socket socketwatch = null;
     //定义一个集合，存储客户端信息
@@ -79,6 +80,7 @@ public class Demo8_SocketServer {
             Thread thread = new Thread (pts);
             //设置为后台线程，随着主线程退出而退出 
             thread.IsBackground = true;
+            Log.Debug("启动线程");
             //启动线程     
             thread.Start (connection);
         }
@@ -91,7 +93,7 @@ public class Demo8_SocketServer {
     static void recv (object socketclientpara) {
         Socket socketServer = socketclientpara as Socket;
 
-        while (true) {
+        while (isOpen) {
             //创建一个内存缓冲区，其大小为1024*1024字节  即1M     
             byte[] arrServerRecMsg = new byte[1024 * 1024];
             //将接收到的信息存入到内存缓冲区，并返回其字节数组的长度    
@@ -105,28 +107,39 @@ public class Demo8_SocketServer {
                 Type packetType = typeof (Person);
                 Person packet = (Person) RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
                     new MemoryStream (arrServerRecMsg), ReferencePool.Acquire (packetType), packetType, PrefixStyle.Fixed32, 0);
-                //将发送的字符串信息附加到文本框txtMsg上     
                 Log.Debug ("收到客户端消息:" + packet.Name);
+// Log.Info("客户端消息长度：" + length);
+//     SCPacketHeader header = (SCPacketHeader) RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
+//         new MemoryStream(arrServerRecMsg), ReferencePool.Acquire<SCPacketHeader> (), typeof (SCPacketHeader), PrefixStyle.Fixed32, 0);
+//         Log.Debug("SCPacketHeader: + SCPacketHeader");
 
                 Address myResponse = new Address ();
                 myResponse.Line1 = "Server:测试地址！";
                 byte[] datas = null;
                 using (MemoryStream memoryStream = new MemoryStream ()) {
                     SCPacketHeader packetHeader = ReferencePool.Acquire<SCPacketHeader> ();
-                    Serializer.Serialize (memoryStream, packetHeader);
+                    packetHeader.Id = 10;
+                    packetHeader.PacketLength = 28;
+                    Serializer.SerializeWithLengthPrefix (memoryStream, packetHeader, PrefixStyle.Fixed32);
                     Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Fixed32);
+                    Log.Error("memoryStream header len:" + memoryStream.Length);
 
                     ReferencePool.Release (packetHeader);
 
-                    datas = memoryStream.ToArray ();
-                }
-
-        //         Address pack = (Address) RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
-        //             new MemoryStream (datas), ReferencePool.Acquire<Address> (), typeof (Address), PrefixStyle.Fixed32, 0);
-		// Log.Debug("pack:" + pack.Line1);
+                    memoryStream.Position = 0;
                     
+                    SCPacketHeader header = Serializer.DeserializeWithLengthPrefix<SCPacketHeader> (
+                        memoryStream, PrefixStyle.Fixed32);
+                    Address addr = Serializer.DeserializeWithLengthPrefix<Address> (
+                        memoryStream, PrefixStyle.Fixed32);
+Log.Info("服务端发送的header id：" + header.Id);
+Log.Info("服务端发送的addr id：" + addr.Id);
+
+                    datas = memoryStream.ToArray ();
+                    Log.Error("服务端的前四个字节：" + datas[0] + "_" + datas[1] + "_" + datas[2] + "_" + datas[3]);
+                }
                 socketServer.Send (datas);
-                socketServer.Close ();
+                // socketServer.Close ();
             } catch (Exception ex) {
                 clientConnectionItems.Remove (socketServer.RemoteEndPoint.ToString ());
 

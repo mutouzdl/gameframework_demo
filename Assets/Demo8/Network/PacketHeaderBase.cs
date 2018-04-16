@@ -1,5 +1,6 @@
 ﻿using GameFramework;
 using GameFramework.Network;
+using ProtoBuf;
 
 namespace StarForce
 {
@@ -10,13 +11,13 @@ namespace StarForce
             get;
         }
 
-        public int Id
+        public abstract int Id
         {
             get;
             set;
         }
 
-        public int PacketLength
+        public abstract int PacketLength
         {
             get;
             set;
@@ -26,6 +27,7 @@ namespace StarForce
         {
             get
             {
+                Log.Warning("PacketType != PacketType.Id:" + Id);
                 return PacketType != PacketType.Undefined && Id > 0 && PacketLength >= 0;
             }
         }

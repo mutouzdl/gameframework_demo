@@ -67,7 +67,9 @@
      <Compile Include="Assets\Demo6\Demo6_HeroLogic.cs" />
      <Compile Include="Assets\Demo6\Demo6_ProcedureLaunch.cs" />
      <Compile Include="Assets\Demo7\Demo7_ProcedureLaunch.cs" />
+     <Compile Include="Assets\Demo8\Demo8_DataObjects.cs" />
      <Compile Include="Assets\Demo8\Demo8_ProcedureLaunch.cs" />
+     <Compile Include="Assets\Demo8\Demo8_Sockets.cs" />
      <Compile Include="Assets\Demo8\Demo8_SocketServer.cs" />
      <Compile Include="Assets\Demo8\Demo8_Test.cs" />
      <Compile Include="Assets\Demo8\Network\CSPacketBase.cs" />

@@ -12,14 +12,36 @@ using System.IO;
 using protobuf_net;
 using ProtoBuf;
 using ProtoBuf.Meta;
+using QuickStart;
 
 public class Demo8_ProcedureLaunch : ProcedureBase {
 	public static bool isClose = false;
 	private GameFramework.Network.INetworkChannel m_Channel;
 	private NetworkChannelHelper m_NetworkChannelHelper;
 
+	private float time = 0;
 	protected override void OnEnter (ProcedureOwner procedureOwner) {
 		base.OnEnter (procedureOwner);
+
+		// Sockets.ShowSockets();
+
+		// Address myResponse = new Address ();
+		// myResponse.Line1 = "Server:测试地址！";
+		// byte[] datas = null;
+		// using (MemoryStream memoryStream = new MemoryStream ()) {
+		// 	SCPacketHeader packetHeader = ReferencePool.Acquire<SCPacketHeader> ();
+		// 	packetHeader.Id = 1;
+		// 	packetHeader.PacketLength = 123;
+		// 	Serializer.SerializeWithLengthPrefix (memoryStream, packetHeader, PrefixStyle.Fixed32);
+		// 	// Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Fixed32);
+
+		// 	ReferencePool.Release (packetHeader);
+		// 	Log.Error ("memoryStream len:" + memoryStream.Length);
+
+		// 	memoryStream.Position = 0;
+		// 	SCPacketHeader header = Serializer.DeserializeWithLengthPrefix<SCPacketHeader> (memoryStream, PrefixStyle.Fixed32);
+		// 	Log.Error ("header:" + header);
+		// }
 
 		// 启动服务器
 		Demo8_SocketServer.Start ();
@@ -31,23 +53,6 @@ public class Demo8_ProcedureLaunch : ProcedureBase {
 
 		Event.Subscribe (NetworkConnectedEventArgs.EventId, OnConnected);
 
-		// Address myResponse = new Address ();
-		// myResponse.Line1 = "测试地址！";
-		// byte[] datas = null;
-		// using (MemoryStream memoryStream = new MemoryStream ()) {
-		// 	SCPacketHeader packetHeader = ReferencePool.Acquire<SCPacketHeader> ();
-		// 	Serializer.Serialize (memoryStream, packetHeader);
-		// 	Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Fixed32);
-
-		// 	ReferencePool.Release (packetHeader);
-
-		// 	datas = memoryStream.ToArray ();
-		// }
-
-		// Address pack = (Address)RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
-		// 	new MemoryStream (datas), ReferencePool.Acquire <Address>(), typeof(Address), PrefixStyle.Fixed32, 0);
-
-		// Log.Debug("pack:" + pack.Line1);
 		// RuntimeTypeModel.Default.Deserialize (new MemoryStream (datas),
 		// 	ReferencePool.Acquire<SCPacketHeader> (), typeof (SCPacketHeader));
 
@@ -64,7 +69,12 @@ public class Demo8_ProcedureLaunch : ProcedureBase {
 	}
 
 	protected override void OnUpdate (ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds) {
-		if (isClose) {
+		if (m_Channel == null) {
+			return;
+		}
+		time += elapseSeconds;
+		if (time > 1 && Demo8_SocketServer.isOpen) {
+			Demo8_SocketServer.isOpen = false;
 			m_Channel.Close ();
 		}
 	}
@@ -75,10 +85,8 @@ public class Demo8_ProcedureLaunch : ProcedureBase {
 		Log.Debug ("连接成功");
 
 		// 发送消息给服务端
-		var data = m_NetworkChannelHelper.Serialize (new Person () {
+		m_Channel.Send (new Person () {
 			Name = "helloworld!!!!!!!!!!!!!!",
 		});
-
-		m_Channel.Send (data);
 	}
 }

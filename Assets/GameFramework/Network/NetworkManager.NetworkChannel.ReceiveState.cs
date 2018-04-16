@@ -63,6 +63,8 @@ namespace GameFramework.Network
                         throw new GameFrameworkException("Target length is invalid.");
                     }
 
+                    Log.Debug("ReceiveState Reset targetLength:" + targetLength);
+
                     m_Stream.Position = 0L;
                     m_Stream.SetLength(targetLength);
                     m_PacketHeader = packetHeader;
