@@ -11,12 +11,14 @@ namespace StarForce
             get;
         }
 
+        /* 注意,abstract是木头加上的,为的是能在子类中重写并加上ProtoMember特性,以便可以使用protobuf序列化 */
         public abstract int Id
         {
             get;
             set;
         }
 
+        /* 注意,abstract是木头加上的,为的是能在子类中重写并加上ProtoMember特性,以便可以使用protobuf序列化 */
         public abstract int PacketLength
         {
             get;
@@ -27,7 +29,6 @@ namespace StarForce
         {
             get
             {
-                Log.Warning("PacketType != PacketType.Id:" + Id);
                 return PacketType != PacketType.Undefined && Id > 0 && PacketLength >= 0;
             }
         }

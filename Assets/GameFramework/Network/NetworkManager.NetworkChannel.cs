@@ -394,7 +394,6 @@ namespace GameFramework.Network
                     throw new GameFrameworkException(errorMessage);
                 }
 
-Log.Debug("m_NetworkChannelHelper.PacketHeaderLength:" + m_NetworkChannelHelper.PacketHeaderLength);
                 m_ReceiveState.PrepareForPacketHeader(m_NetworkChannelHelper.PacketHeaderLength);
 
                 try
@@ -610,8 +609,6 @@ Log.Debug("m_NetworkChannelHelper.PacketHeaderLength:" + m_NetworkChannelHelper.
             {
                 try
                 {
-                    Log.Debug("Receive m_ReceiveState.Stream.Position:" + m_ReceiveState.Stream.Position);
-                    Log.Debug("Receive m_ReceiveState.Stream.Length:" + m_ReceiveState.Stream.Length);
                     m_Socket.BeginReceive(m_ReceiveState.Stream.GetBuffer(), (int)m_ReceiveState.Stream.Position, (int)(m_ReceiveState.Stream.Length - m_ReceiveState.Stream.Position), SocketFlags.None, ReceiveCallback, m_Socket);
                 }
                 catch (Exception exception)
@@ -629,7 +626,6 @@ Log.Debug("m_NetworkChannelHelper.PacketHeaderLength:" + m_NetworkChannelHelper.
 
             private bool ProcessPacketHeader()
             {
-                Log.Debug("ProcessPacketHeader m_ReceiveState.Stream len:" + m_ReceiveState.Stream.Length);
                 try
                 {
                     object customErrorData = null;
@@ -746,7 +742,6 @@ Log.Debug("m_NetworkChannelHelper.PacketHeaderLength:" + m_NetworkChannelHelper.
                     NetworkChannelConnected(this, socketUserData.UserData);
                 }
 
-Log.Debug("Receive 1");
                 Receive();
             }
 
@@ -803,7 +798,6 @@ Log.Debug("Receive 1");
 
                     throw;
                 }
-                Log.Debug("ReceiveCallback bytesReceived len:" + bytesReceived);
 
                 if (bytesReceived <= 0)
                 {
@@ -814,8 +808,6 @@ Log.Debug("Receive 1");
                 m_ReceiveState.Stream.Position += bytesReceived;
                 if (m_ReceiveState.Stream.Position < m_ReceiveState.Stream.Length)
                 {
-Log.Debug("Receive 2");
-                    
                     Receive();
                     return;
                 }
@@ -824,7 +816,6 @@ Log.Debug("Receive 2");
 
                 bool processSuccess = false;
 
-                Log.Debug("ReceiveCallback:" + m_ReceiveState.Stream.Length);
                 if (m_ReceiveState.PacketHeader != null)
                 {
                     processSuccess = ProcessPacket();
@@ -836,8 +827,6 @@ Log.Debug("Receive 2");
 
                 if (processSuccess)
                 {
-Log.Debug("Receive 3");
-                    
                     Receive();
                     return;
                 }

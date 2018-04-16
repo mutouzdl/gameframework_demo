@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading;
 using GameFramework;
 using GameFramework.Network;
-using protobuf_net;
 using ProtoBuf;
 using ProtoBuf.Meta;
 using StarForce;
 
+/*
+    本Serve代码来源于网络，略微做了一些小调整
+*/
 public class Demo8_SocketServer {
     public static bool isOpen = true;
     // 创建一个和客户端通信的套接字
@@ -100,46 +102,36 @@ public class Demo8_SocketServer {
             try {
                 int length = socketServer.Receive (arrServerRecMsg);
 
-                //将机器接受到的字节数组转换为人可以读懂的字符串     
-                // string strSRecMsg = Encoding.UTF8.GetString (arrServerRecMsg, 0, length);
-                //Person myRequest = Serializer.DeserializeWithLengthPrefix<Person> (arrServerRecMsg, PrefixStyle.Base128);
+                // 这里只是演示用，实际中可以根据头部消息判断是什么类型的消息，然后再反序列化
+                MemoryStream clientStream = new MemoryStream (arrServerRecMsg);
+                SCPacketHeader header = Serializer.DeserializeWithLengthPrefix<SCPacketHeader> (clientStream, PrefixStyle.Fixed32);
 
-                Type packetType = typeof (Person);
-                Person packet = (Person) RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
-                    new MemoryStream (arrServerRecMsg), ReferencePool.Acquire (packetType), packetType, PrefixStyle.Fixed32, 0);
-                Log.Debug ("收到客户端消息:" + packet.Name);
-// Log.Info("客户端消息长度：" + length);
-//     SCPacketHeader header = (SCPacketHeader) RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
-//         new MemoryStream(arrServerRecMsg), ReferencePool.Acquire<SCPacketHeader> (), typeof (SCPacketHeader), PrefixStyle.Fixed32, 0);
-//         Log.Debug("SCPacketHeader: + SCPacketHeader");
+                Type packetType = typeof (CSHello);
+                CSHello packet = (CSHello) RuntimeTypeModel.Default.DeserializeWithLengthPrefix (
+                    clientStream, ReferencePool.Acquire (packetType), packetType, PrefixStyle.Fixed32, 0);
+                Log.Info ("收到客户端消息:" + packet.Name);
 
-                Address myResponse = new Address ();
-                myResponse.Line1 = "Server:测试地址！";
+                SCHello response = new SCHello ();
+                response.Name = "客户端你好...调皮";
                 byte[] datas = null;
                 using (MemoryStream memoryStream = new MemoryStream ()) {
+                    // 因为头部消息有8字节长度，所以先跳过8字节
+                    memoryStream.Position = 8;
+                    Serializer.SerializeWithLengthPrefix (memoryStream, response, PrefixStyle.Fixed32);
+
+                    // 头部消息
                     SCPacketHeader packetHeader = ReferencePool.Acquire<SCPacketHeader> ();
-                    packetHeader.Id = 10;
-                    packetHeader.PacketLength = 28;
+                    packetHeader.Id = response.Id;
+                    packetHeader.PacketLength = (int)memoryStream.Length - 8;   // 消息内容长度需要减去头部消息长度
+
+                    memoryStream.Position = 0;
                     Serializer.SerializeWithLengthPrefix (memoryStream, packetHeader, PrefixStyle.Fixed32);
-                    Serializer.SerializeWithLengthPrefix (memoryStream, myResponse, PrefixStyle.Fixed32);
-                    Log.Error("memoryStream header len:" + memoryStream.Length);
 
                     ReferencePool.Release (packetHeader);
 
-                    memoryStream.Position = 0;
-                    
-                    SCPacketHeader header = Serializer.DeserializeWithLengthPrefix<SCPacketHeader> (
-                        memoryStream, PrefixStyle.Fixed32);
-                    Address addr = Serializer.DeserializeWithLengthPrefix<Address> (
-                        memoryStream, PrefixStyle.Fixed32);
-Log.Info("服务端发送的header id：" + header.Id);
-Log.Info("服务端发送的addr id：" + addr.Id);
-
                     datas = memoryStream.ToArray ();
-                    Log.Error("服务端的前四个字节：" + datas[0] + "_" + datas[1] + "_" + datas[2] + "_" + datas[3]);
                 }
                 socketServer.Send (datas);
-                // socketServer.Close ();
             } catch (Exception ex) {
                 clientConnectionItems.Remove (socketServer.RemoteEndPoint.ToString ());
 
@@ -152,14 +144,5 @@ Log.Info("服务端发送的addr id：" + addr.Id);
                 break;
             }
         }
-    }
-
-    ///      
-    /// 获取当前系统时间的方法    
-    /// 当前时间     
-    static DateTime GetCurrentTime () {
-        DateTime currentTime = new DateTime ();
-        currentTime = DateTime.Now;
-        return currentTime;
     }
 }

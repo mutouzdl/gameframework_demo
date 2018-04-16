@@ -7,7 +7,6 @@ using GameFramework.Event;
 using GameFramework.Network;
 using ProtoBuf;
 using ProtoBuf.Meta;
-using protobuf_net;
 using UnityGameFramework.Runtime;
 
 namespace StarForce {
@@ -113,11 +112,21 @@ namespace StarForce {
                 return null;
             }
 
-            // 恐怖的 GCAlloc，这里是例子，不做优化
+            // 恐怖的 GCAlloc，这里是例子，不做优化(这句注释是框架作者写的,我本人并不懂GC什么的)
             using (MemoryStream memoryStream = new MemoryStream ()) {
-                CSPacketHeader packetHeader = ReferencePool.Acquire<CSPacketHeader> ();
-                Serializer.SerializeWithLengthPrefix (memoryStream, packetHeader, PrefixStyle.Fixed32);
+                /* 以下内容为木头本人做的改动,不知道是否有错误的地方(虽然它运行起来是正确的),希望大家能帮忙指正 */
+                // 因为头部消息有8字节长度，所以先跳过8字节
+                memoryStream.Position = 8;
                 Serializer.SerializeWithLengthPrefix (memoryStream, packet, PrefixStyle.Fixed32);
+
+                // 头部消息
+                CSPacketHeader packetHeader = ReferencePool.Acquire<CSPacketHeader> ();
+                packetHeader.Id = packet.Id;
+                packetHeader.PacketLength = (int) memoryStream.Length - 8; // 消息内容长度需要减去头部消息长度
+
+                memoryStream.Position = 0;
+                Serializer.SerializeWithLengthPrefix (memoryStream, packetHeader, PrefixStyle.Fixed32);
+
                 ReferencePool.Release (packetHeader);
 
                 return memoryStream.ToArray ();
@@ -131,16 +140,10 @@ namespace StarForce {
         /// <param name="customErrorData">用户自定义错误数据。</param>
         /// <returns></returns>
         public IPacketHeader DeserializePacketHeader (Stream source, out object customErrorData) {
-            Log.Debug("DeserializePacketHeader!!!!!!!!!!!!!! source len:" + source.Length);
             // 注意：此函数并不在主线程调用！
             customErrorData = null;
 
-            source.Position = 0;
-
-            SCPacketHeader header = Serializer.DeserializeWithLengthPrefix<SCPacketHeader> (source, PrefixStyle.Fixed32);
-
-            Log.Error("de header id:" + header.Id);
-            return header;
+            return Serializer.DeserializeWithLengthPrefix<SCPacketHeader> (source, PrefixStyle.Fixed32);
         }
 
         /// <summary>
@@ -151,8 +154,6 @@ namespace StarForce {
         /// <param name="customErrorData">用户自定义错误数据。</param>
         /// <returns>反序列化后的消息包。</returns>
         public Packet DeserializePacket (IPacketHeader packetHeader, Stream source, out object customErrorData) {
-            Log.Debug ("DeserializePacket!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! len:" + source.Length + ",packetHeader:" + packetHeader);
-
             // 注意：此函数并不在主线程调用！
             customErrorData = null;
 
@@ -161,8 +162,6 @@ namespace StarForce {
                 Log.Warning ("Packet header is invalid.");
                 return null;
             }
-            Log.Debug("DE scPacketHeader:" + scPacketHeader.Id 
-            + "_" + scPacketHeader.PacketLength + "_" + scPacketHeader.PacketType + ",scPacketHeader.IsValid:" + scPacketHeader.IsValid);
 
             Packet packet = null;
             if (scPacketHeader.IsValid) {
