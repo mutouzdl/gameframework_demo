@@ -11,7 +11,6 @@ using System;
 using System.IO;
 using ProtoBuf;
 using ProtoBuf.Meta;
-using QuickStart;
 
 public class Demo8_ProcedureLaunch : ProcedureBase {
 	public static bool isClose = false;

@@ -90,7 +90,6 @@ namespace StarForce {
         /// </summary>
         /// <returns>是否发送心跳消息包成功。</returns>
         public bool SendHeartBeat () {
-            m_NetworkChannel.Send (ReferencePool.Acquire<CSHeartBeat> ());
             return true;
         }
 
