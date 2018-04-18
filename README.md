@@ -6,19 +6,19 @@ Game Framework 版本：3.1.1
 Unity3D 版本：2017.3
 
 ## 教程列表：
- - [StarForce解读](https://mutouzdl.gitbooks.io/gameframework/content/chapter1.html)
- - [Demo1-如何创建一个GameFramework项目](https://mutouzdl.gitbooks.io/gameframework/content/ru-men-xiao-shi-li/demo1.html)
- - [Demo2-切换流程和场景](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo2.html)
- - [Demo3-加载UI](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo3.html)
- - [Demo4-内置事件订阅](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo4.html)
- - [Demo5-加载配置文件](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo5.html)
- - [Demo6-加载实体](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo6.html)
- - [StarForce无封装简陋不完全版](https://mutouzdl.gitbooks.io/gameframework/content/gamedemo/simplestarforce.html)
- - [Demo7-发起Web请求](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo7.html)
- - Demo8，暂时没有写完，先研究Demo9去了，抱歉。
- - [Demo9-AssetBundle打包的一些坑](https://mutouzdl.gitbooks.io/gameframework/ru-men-xiao-shi-li/demo9.html)
+ - [StarForce解读](http://www.benmutou.com/archives/2473)
+ - [Demo1-如何创建一个GameFramework项目](http://www.benmutou.com/archives/2535)
+ - [Demo2-切换流程和场景](http://www.benmutou.com/archives/2548)
+ - [Demo3-加载UI](http://www.benmutou.com/archives/2564)
+ - [Demo4-内置事件订阅](http://www.benmutou.com/archives/2571)
+ - [Demo5-加载配置文件](http://www.benmutou.com/archives/2579)
+ - [Demo6-加载实体](http://www.benmutou.com/archives/2587)
+ - [StarForce无封装简陋不完全版](http://www.benmutou.com/archives/2597)
+ - [Demo7-发起Web请求](http://www.benmutou.com/archives/2603)
+ - [Demo8-NetWork网络连接、发送、接收数据](http://www.benmutou.com/archives/2630)
+ - [Demo9-AssetBundle打包的一些坑](http://www.benmutou.com/archives/2615)
  
-GitBook很不稳定，如果访问不了，可以到我的博客查看教程：[笨木头与游戏开发 Game FrameWork](http://www.benmutou.com/archives/category/unity3d/game-framework)
+GitBook很不稳定，不再维护gitbook（不是github）了，以后教程都在我的博客发布：[笨木头与游戏开发 Game FrameWork](http://www.benmutou.com/archives/category/unity3d/game-framework)
 
 除了StarForce解读系列教程，其他教程的源码都有的，源码按照Demo目录划分，每个Demo目录下都有一份对应教程的PDF文件（和上面的教程是一样的）。
 
@@ -31,7 +31,7 @@ GitBook很不稳定，如果访问不了，可以到我的博客查看教程：[
  欢迎大家补充。
 
 ## 时间线
-**目前进展：** 2018.04.18 正在研究NetWork网络组件，教程编写中，预计这两天发布
+**2018.04.18：** Demo8已完成
 
 **2018.04.13：** GameFramework.dll改为源码，没错，大家可以愉快地调试跟踪框架源码了
 
