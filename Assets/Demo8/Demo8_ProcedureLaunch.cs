@@ -21,7 +21,7 @@ public class Demo8_ProcedureLaunch : ProcedureBase {
 	protected override void OnEnter (ProcedureOwner procedureOwner) {
 		base.OnEnter (procedureOwner);
 
-		// 启动服务器
+		// 启动服务器(服务端的代码随便找随便改的，大家可以忽略，假设有个服务端就行了)
 		Demo8_SocketServer.Start ();
 
 		// 获取框架事件组件

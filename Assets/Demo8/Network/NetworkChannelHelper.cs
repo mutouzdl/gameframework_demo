@@ -143,6 +143,7 @@ namespace StarForce {
             customErrorData = null;
 
             return Serializer.DeserializeWithLengthPrefix<SCPacketHeader> (source, PrefixStyle.Fixed32);
+            // return (IPacketHeader)RuntimeTypeModel.Default.Deserialize(source, ReferencePool.Acquire<SCPacketHeader>(), typeof(SCPacketHeader));
         }
 
         /// <summary>
