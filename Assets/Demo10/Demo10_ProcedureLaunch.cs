@@ -15,6 +15,5 @@ public class Demo10_ProcedureLaunch : ProcedureBase {
 		// 创建实体
 		entityComponent.ShowEntity<Demo10_HeroLogic>(1, "Assets/Demo10/CubeEntity.prefab", "EntityGroup");
 	}
-
 }
 
