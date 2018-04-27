@@ -52,6 +52,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Demo1\Demo1_ProcedureHelloWorld.cs" />
+     <Compile Include="Assets\Demo10\Demo10_HeroIdleState.cs" />
+     <Compile Include="Assets\Demo10\Demo10_HeroLogic.cs" />
+     <Compile Include="Assets\Demo10\Demo10_HeroWalkState.cs" />
+     <Compile Include="Assets\Demo10\Demo10_ProcedureLaunch.cs" />
      <Compile Include="Assets\Demo2\Demo2_Controller.cs" />
      <Compile Include="Assets\Demo2\Demo2_ProcedureGame.cs" />
      <Compile Include="Assets\Demo2\Demo2_ProcedureLaunch.cs" />
