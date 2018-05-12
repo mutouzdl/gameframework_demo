@@ -29,7 +29,6 @@ namespace UnityGameFramework.Editor.AssetBundleTools
 
         private void OnEnable()
         {
-            Debug.Log("AssetBundleBuilder OnEnable");
             m_Controller = new AssetBundleBuilderController();
             m_Controller.OnLoadingAssetBundle += OnLoadingAssetBundle;
             m_Controller.OnLoadingAsset += OnLoadingAsset;

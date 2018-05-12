@@ -61,7 +61,6 @@ namespace StarForce {
 
             Event.Subscribe (UnityGameFramework.Runtime.NetworkConnectedEventArgs.EventId, OnNetworkConnected);
             Event.Subscribe (UnityGameFramework.Runtime.NetworkClosedEventArgs.EventId, OnNetworkClosed);
-            Event.Subscribe (UnityGameFramework.Runtime.NetworkSendPacketEventArgs.EventId, OnNetworkSendPacket);
             Event.Subscribe (UnityGameFramework.Runtime.NetworkMissHeartBeatEventArgs.EventId, OnNetworkMissHeartBeat);
             Event.Subscribe (UnityGameFramework.Runtime.NetworkErrorEventArgs.EventId, OnNetworkError);
             Event.Subscribe (UnityGameFramework.Runtime.NetworkCustomErrorEventArgs.EventId, OnNetworkCustomError);
@@ -77,7 +76,6 @@ namespace StarForce {
 
             Event.Unsubscribe (UnityGameFramework.Runtime.NetworkConnectedEventArgs.EventId, OnNetworkConnected);
             Event.Unsubscribe (UnityGameFramework.Runtime.NetworkClosedEventArgs.EventId, OnNetworkClosed);
-            Event.Unsubscribe (UnityGameFramework.Runtime.NetworkSendPacketEventArgs.EventId, OnNetworkSendPacket);
             Event.Unsubscribe (UnityGameFramework.Runtime.NetworkMissHeartBeatEventArgs.EventId, OnNetworkMissHeartBeat);
             Event.Unsubscribe (UnityGameFramework.Runtime.NetworkErrorEventArgs.EventId, OnNetworkError);
             Event.Unsubscribe (UnityGameFramework.Runtime.NetworkCustomErrorEventArgs.EventId, OnNetworkCustomError);
@@ -206,13 +204,6 @@ namespace StarForce {
             }
 
             Log.Info ("Network channel '{0}' closed.", ne.NetworkChannel.Name);
-        }
-
-        private void OnNetworkSendPacket (object sender, GameEventArgs e) {
-            UnityGameFramework.Runtime.NetworkSendPacketEventArgs ne = (UnityGameFramework.Runtime.NetworkSendPacketEventArgs) e;
-            if (ne.NetworkChannel != m_NetworkChannel) {
-                return;
-            }
         }
 
         private void OnNetworkMissHeartBeat (object sender, GameEventArgs e) {

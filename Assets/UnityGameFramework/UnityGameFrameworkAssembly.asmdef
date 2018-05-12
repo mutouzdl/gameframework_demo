@@ -1,6 +1,8 @@
 {
     "name": "GameFrameworkAssembly",
     "references": [],
+    "optionalUnityReferences": [],
     "includePlatforms": [],
-    "excludePlatforms": []
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
 }
