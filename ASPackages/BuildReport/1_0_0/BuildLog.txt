@@ -1,0 +1,3 @@
+[10:15:24.394][INFO] Build Start Time: 2018-05-13 10:15:24.394
+[10:15:24.394][INFO] Start prepare AssetBundle collection...
+[10:15:24.394][ERROR] Can not parse 'AssetBundleCollection.xml', please use 'AssetBundle Editor' tool first.

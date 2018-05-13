@@ -318,6 +318,9 @@
      <Compile Include="Assets\GameFramework\WebRequest\WebRequestStartEventArgs.cs" />
      <Compile Include="Assets\GameFramework\WebRequest\WebRequestSuccessEventArgs.cs" />
      <None Include="Assets\GameFramework\GameFramework.asmdef" />
+     <None Include="Assets\GameFramework\Configs\AssetBundleBuilder.xml" />
+     <None Include="Assets\GameFramework\Configs\AssetBundleCollection.xml" />
+     <None Include="Assets\GameFramework\Configs\AssetBundleEditor.xml" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>

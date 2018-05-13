@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <BuildReport>
+    <Summary>
+      <ProductName>GameFrameworkDemos</ProductName>
+      <CompanyName>笨木头与游戏开发</CompanyName>
+      <GameIdentifier>com.Company.ProductName</GameIdentifier>
+      <ApplicableGameVersion>1.0</ApplicableGameVersion>
+      <InternalResourceVersion>0</InternalResourceVersion>
+      <UnityVersion>2018.1.0f2</UnityVersion>
+      <WindowsSelected>True</WindowsSelected>
+      <MacOSXSelected>True</MacOSXSelected>
+      <IOSSelected>True</IOSSelected>
+      <AndroidSelected>True</AndroidSelected>
+      <WindowsStoreSelected>True</WindowsStoreSelected>
+      <ZipSelected>True</ZipSelected>
+      <RecordScatteredDependencyAssetsSelected>False</RecordScatteredDependencyAssetsSelected>
+      <BuildAssetBundleOptions>272</BuildAssetBundleOptions>
+    </Summary>
+    <AssetBundles Count="0" />
+  </BuildReport>
+</UnityGameFramework>

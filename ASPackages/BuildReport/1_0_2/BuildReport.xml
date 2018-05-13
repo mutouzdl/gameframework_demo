@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <BuildReport>
+    <Summary>
+      <ProductName>GameFrameworkDemos</ProductName>
+      <CompanyName>笨木头与游戏开发</CompanyName>
+      <GameIdentifier>com.Company.ProductName</GameIdentifier>
+      <ApplicableGameVersion>1.0</ApplicableGameVersion>
+      <InternalResourceVersion>2</InternalResourceVersion>
+      <UnityVersion>2018.1.0f2</UnityVersion>
+      <WindowsSelected>True</WindowsSelected>
+      <MacOSXSelected>False</MacOSXSelected>
+      <IOSSelected>False</IOSSelected>
+      <AndroidSelected>False</AndroidSelected>
+      <WindowsStoreSelected>False</WindowsStoreSelected>
+      <ZipSelected>True</ZipSelected>
+      <RecordScatteredDependencyAssetsSelected>False</RecordScatteredDependencyAssetsSelected>
+      <BuildAssetBundleOptions>272</BuildAssetBundleOptions>
+    </Summary>
+    <AssetBundles Count="2">
+      <AssetBundle Name="demo9_scene" LoadType="0" Packed="True">
+        <Assets Count="2">
+          <Asset Guid="2766b2d22f8e02c4ea3a54d1e6285fa3" Name="Assets/Demo9/Demo9.unity" Length="14414" HashCode="-2059560102" />
+          <Asset Guid="33ae167d8be450e4584aebd66d906f6d" Name="Assets/Demo9/Demo9_Menu.unity" Length="6825" HashCode="366913838" />
+        </Assets>
+        <Codes>
+          <StandaloneWindows Length="14626" HashCode="1349935324" ZipLength="11979" ZipHashCode="-1355722209" />
+        </Codes>
+      </AssetBundle>
+      <AssetBundle Name="demo9_ui" LoadType="0" Packed="True">
+        <Assets Count="1">
+          <Asset Guid="87e827b3ef1f6184cae624bbec184f05" Name="Assets/Demo9/UI_Menu.prefab" Length="5559" HashCode="1662323126" />
+        </Assets>
+        <Codes>
+          <StandaloneWindows Length="4715" HashCode="-492484862" ZipLength="3924" ZipHashCode="124935952" />
+        </Codes>
+      </AssetBundle>
+    </AssetBundles>
+  </BuildReport>
+</UnityGameFramework>

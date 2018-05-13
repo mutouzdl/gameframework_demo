@@ -1,0 +1,15 @@
+ManifestFileVersion: 0
+CRC: 1530511974
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 67a6a01d2dd9c62b822884b0aceb7d04
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/Demo9/Demo9.unity
+- Assets/Demo9/Demo9_Menu.unity
+Dependencies: []

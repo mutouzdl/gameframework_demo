@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2531052161
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: demo9_scene
+      Dependencies: {}
+    Info_1:
+      Name: demo9_ui
+      Dependencies: {}

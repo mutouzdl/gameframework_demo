@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <BuildReport>
+    <Summary>
+      <ProductName>GameFrameworkDemos</ProductName>
+      <CompanyName>笨木头与游戏开发</CompanyName>
+      <GameIdentifier>com.Company.ProductName</GameIdentifier>
+      <ApplicableGameVersion>1.0</ApplicableGameVersion>
+      <InternalResourceVersion>1</InternalResourceVersion>
+      <UnityVersion>2018.1.0f2</UnityVersion>
+      <WindowsSelected>True</WindowsSelected>
+      <MacOSXSelected>False</MacOSXSelected>
+      <IOSSelected>False</IOSSelected>
+      <AndroidSelected>False</AndroidSelected>
+      <WindowsStoreSelected>False</WindowsStoreSelected>
+      <ZipSelected>True</ZipSelected>
+      <RecordScatteredDependencyAssetsSelected>False</RecordScatteredDependencyAssetsSelected>
+      <BuildAssetBundleOptions>272</BuildAssetBundleOptions>
+    </Summary>
+    <AssetBundles Count="1">
+      <AssetBundle Name="demo9_scene" LoadType="0" Packed="True">
+        <Assets Count="0" />
+        <Codes />
+      </AssetBundle>
+    </AssetBundles>
+  </BuildReport>
+</UnityGameFramework>
