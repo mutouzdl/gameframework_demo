@@ -22,6 +22,7 @@ Unity3D 版本：2017.3
  - [Demo7-发起Web请求](http://www.benmutou.com/archives/2603)
  - [Demo8-NetWork网络连接、发送、接收数据](http://www.benmutou.com/archives/2630)
  - [Demo9-AssetBundle打包的一些坑](http://www.benmutou.com/archives/2615)
+ - [Demo10-有限状态机的使用](http://www.benmutou.com/archives/2643)
  
 GitBook很不稳定，不再维护gitbook（不是github）了，以后教程都在我的博客发布：[笨木头与游戏开发 Game FrameWork](http://www.benmutou.com/archives/category/unity3d/game-framework)
 
@@ -36,6 +37,8 @@ GitBook很不稳定，不再维护gitbook（不是github）了，以后教程都
  欢迎大家补充。
 
 ## 时间线
+**2018.04.27：** 新增Demo10-有限状态机的使用
+
 **2018.04.18：** Demo8已完成
 
 **2018.04.13：** GameFramework.dll改为源码，没错，大家可以愉快地调试跟踪框架源码了
