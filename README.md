@@ -34,6 +34,7 @@ GitBook很不稳定，不再维护gitbook（不是github）了，以后教程都
 
  - [简书-Hu笑笑](https://www.jianshu.com/nb/24102104)
  - [CSDN-不再码农](https://blog.csdn.net/zphshiwo/article/category/7542068)
+ - [CSDN-自然妙有猫仙人](https://so.csdn.net/so/search/s.do?q=GameFramework&t=blog&u=qq_32821435)
  
  欢迎大家补充。
 
