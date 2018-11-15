@@ -41,6 +41,7 @@ GitBook很不稳定，不再维护gitbook（不是github）了，以后教程都
 
 ## 时间线
 **2018.06.28：** 增加一篇教程：杂记001
+
 **2018.05.27：** 开源一个基于GF的小游戏：https://github.com/mutouzdl/GF_JustOneLevel
 
 **2018.05.13：** 更新GameFramework框架至3.1.2版本，Unity3D工程更新至2018.1版本。
