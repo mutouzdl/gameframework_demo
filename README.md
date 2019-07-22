@@ -37,6 +37,7 @@ GitBook很不稳定，不再维护gitbook（不是github）了，以后教程都
  - [CSDN-不再码农](https://blog.csdn.net/zphshiwo/article/category/7542068)
  - [CSDN-自然妙有猫仙人](https://blog.csdn.net/qq_32821435/article/category/7709588) (推荐)
  - [CSDN-烟雨迷离半世殇](https://blog.csdn.net/qq_15020543/column/info/27131) (推荐)
+ - [烟雨迷离半世殇 开源作品](https://www.lfzxb.top/unityworks/) (强烈推荐)
  
  欢迎大家补充。
 
