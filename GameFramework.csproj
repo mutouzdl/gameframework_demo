@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{2B21235E-FFF6-1173-07BA-0198D0FE60EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -22,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_0;UNITY_2018_1;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_0;UNITY_2018_1;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -42,6 +43,13 @@
     <NoStdLib>true</NoStdLib>
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2018.1.0f2</UnityVersion>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity2018\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -51,566 +59,573 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameFramework\Base\EventPool\BaseEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Base\EventPool\EventPool.cs" />
-     <Compile Include="Assets\GameFramework\Base\EventPool\EventPool.Event.cs" />
-     <Compile Include="Assets\GameFramework\Base\EventPool\EventPoolMode.cs" />
-     <Compile Include="Assets\GameFramework\Base\GameFrameworkAction.cs" />
-     <Compile Include="Assets\GameFramework\Base\GameFrameworkEntry.cs" />
-     <Compile Include="Assets\GameFramework\Base\GameFrameworkEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Base\GameFrameworkException.cs" />
-     <Compile Include="Assets\GameFramework\Base\GameFrameworkFunc.cs" />
-     <Compile Include="Assets\GameFramework\Base\GameFrameworkModule.cs" />
-     <Compile Include="Assets\GameFramework\Base\Log\Log.cs" />
-     <Compile Include="Assets\GameFramework\Base\Log\Log.ILogHelper.cs" />
-     <Compile Include="Assets\GameFramework\Base\Log\LogLevel.cs" />
-     <Compile Include="Assets\GameFramework\Base\ReferencePool\IReference.cs" />
-     <Compile Include="Assets\GameFramework\Base\ReferencePool\ReferencePool.cs" />
-     <Compile Include="Assets\GameFramework\Base\ReferencePool\ReferencePool.ReferenceCollection.cs" />
-     <Compile Include="Assets\GameFramework\Base\ReferencePool\ReferencePoolInfo.cs" />
-     <Compile Include="Assets\GameFramework\Base\TaskPool\ITask.cs" />
-     <Compile Include="Assets\GameFramework\Base\TaskPool\ITaskAgent.cs" />
-     <Compile Include="Assets\GameFramework\Base\TaskPool\TaskPool.cs" />
-     <Compile Include="Assets\GameFramework\Base\Variable\GenericVariable.cs" />
-     <Compile Include="Assets\GameFramework\Base\Variable\Variable.cs" />
-     <Compile Include="Assets\GameFramework\Config\ConfigManager.ConfigData.cs" />
-     <Compile Include="Assets\GameFramework\Config\ConfigManager.cs" />
-     <Compile Include="Assets\GameFramework\Config\IConfigHelper.cs" />
-     <Compile Include="Assets\GameFramework\Config\IConfigManager.cs" />
-     <Compile Include="Assets\GameFramework\Config\LoadConfigDependencyAssetEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Config\LoadConfigFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Config\LoadConfigSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Config\LoadConfigUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\DataNode\DataNodeManager.cs" />
-     <Compile Include="Assets\GameFramework\DataNode\DataNodeManager.DataNode.cs" />
-     <Compile Include="Assets\GameFramework\DataNode\IDataNode.cs" />
-     <Compile Include="Assets\GameFramework\DataNode\IDataNodeManager.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\DataTableBase.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\DataTableManager.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\DataTableManager.DataTable.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\IDataRow.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\IDataTable.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\IDataTableHelper.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\IDataTableManager.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\LoadDataTableDependencyAssetEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\LoadDataTableFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\LoadDataTableSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\DataTable\LoadDataTableUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Debugger\DebuggerManager.cs" />
-     <Compile Include="Assets\GameFramework\Debugger\DebuggerManager.DebuggerWindowGroup.cs" />
-     <Compile Include="Assets\GameFramework\Debugger\IDebuggerManager.cs" />
-     <Compile Include="Assets\GameFramework\Debugger\IDebuggerWindow.cs" />
-     <Compile Include="Assets\GameFramework\Debugger\IDebuggerWindowGroup.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadAgentHelperCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadAgentHelperErrorEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadAgentHelperUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadManager.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadAgent.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadCounter.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadCounter.DownloadCounterNode.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadTask.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadManager.DownloadTaskStatus.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadStartEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Download\DownloadUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Download\IDownloadAgentHelper.cs" />
-     <Compile Include="Assets\GameFramework\Download\IDownloadManager.cs" />
-     <Compile Include="Assets\GameFramework\Entity\EntityManager.cs" />
-     <Compile Include="Assets\GameFramework\Entity\EntityManager.EntityGroup.cs" />
-     <Compile Include="Assets\GameFramework\Entity\EntityManager.EntityInfo.cs" />
-     <Compile Include="Assets\GameFramework\Entity\EntityManager.EntityInstanceObject.cs" />
-     <Compile Include="Assets\GameFramework\Entity\EntityManager.EntityStatus.cs" />
-     <Compile Include="Assets\GameFramework\Entity\EntityManager.ShowEntityInfo.cs" />
-     <Compile Include="Assets\GameFramework\Entity\HideEntityCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Entity\IEntity.cs" />
-     <Compile Include="Assets\GameFramework\Entity\IEntityGroup.cs" />
-     <Compile Include="Assets\GameFramework\Entity\IEntityGroupHelper.cs" />
-     <Compile Include="Assets\GameFramework\Entity\IEntityHelper.cs" />
-     <Compile Include="Assets\GameFramework\Entity\IEntityManager.cs" />
-     <Compile Include="Assets\GameFramework\Entity\ShowEntityDependencyAssetEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Entity\ShowEntityFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Entity\ShowEntitySuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Entity\ShowEntityUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Event\EventManager.cs" />
-     <Compile Include="Assets\GameFramework\Event\GameEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Event\IEventManager.cs" />
-     <Compile Include="Assets\GameFramework\Fsm\Fsm.cs" />
-     <Compile Include="Assets\GameFramework\Fsm\FsmBase.cs" />
-     <Compile Include="Assets\GameFramework\Fsm\FsmEventHandler.cs" />
-     <Compile Include="Assets\GameFramework\Fsm\FsmManager.cs" />
-     <Compile Include="Assets\GameFramework\Fsm\FsmState.cs" />
-     <Compile Include="Assets\GameFramework\Fsm\IFsm.cs" />
-     <Compile Include="Assets\GameFramework\Fsm\IFsmManager.cs" />
-     <Compile Include="Assets\GameFramework\Localization\ILocalizationHelper.cs" />
-     <Compile Include="Assets\GameFramework\Localization\ILocalizationManager.cs" />
-     <Compile Include="Assets\GameFramework\Localization\Language.cs" />
-     <Compile Include="Assets\GameFramework\Localization\LoadDictionaryDependencyAssetEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Localization\LoadDictionaryFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Localization\LoadDictionarySuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Localization\LoadDictionaryUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Localization\LocalizationManager.cs" />
-     <Compile Include="Assets\GameFramework\Network\INetworkChannel.cs" />
-     <Compile Include="Assets\GameFramework\Network\INetworkChannelHelper.cs" />
-     <Compile Include="Assets\GameFramework\Network\INetworkManager.cs" />
-     <Compile Include="Assets\GameFramework\Network\IPacketHandler.cs" />
-     <Compile Include="Assets\GameFramework\Network\IPacketHeader.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkClosedEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkConnectedEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkCustomErrorEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkErrorCode.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkErrorEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkManager.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.ConnectState.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.HeartBeatState.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.ReceiveState.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkManager.NetworkChannel.SendState.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkMissHeartBeatEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Network\NetworkType.cs" />
-     <Compile Include="Assets\GameFramework\Network\Packet.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\IObjectPool.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\IObjectPoolManager.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\ObjectBase.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\ObjectInfo.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\ObjectPoolBase.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\ObjectPoolManager.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\ObjectPoolManager.Object.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\ObjectPoolManager.ObjectPool.cs" />
-     <Compile Include="Assets\GameFramework\ObjectPool\ReleaseObjectFilterCallback.cs" />
-     <Compile Include="Assets\GameFramework\Procedure\IProcedureManager.cs" />
-     <Compile Include="Assets\GameFramework\Procedure\ProcedureBase.cs" />
-     <Compile Include="Assets\GameFramework\Procedure\ProcedureManager.cs" />
-     <Compile Include="Assets\GameFramework\Properties\AssemblyInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\CheckVersionListResult.cs" />
-     <Compile Include="Assets\GameFramework\Resource\DecryptResourceCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ILoadResourceAgentHelper.cs" />
-     <Compile Include="Assets\GameFramework\Resource\IResourceHelper.cs" />
-     <Compile Include="Assets\GameFramework\Resource\IResourceManager.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadAssetCallbacks.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadAssetDependencyAssetCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadAssetFailureCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadAssetSuccessCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadAssetUpdateCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadBytesCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperErrorEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperLoadCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperParseBytesCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperReadBytesCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperReadFileCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadResourceAgentHelperUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadResourceProgress.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadResourceStatus.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadSceneCallbacks.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadSceneDependencyAssetCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadSceneFailureCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadSceneSuccessCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\LoadSceneUpdateCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceCheckCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceInitCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.AssetDependencyInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.AssetInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.LoadType.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ReadWriteResourceInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.CheckStatus.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.LocalVersionInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.RemoteVersionInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceChecker.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceGroup.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceIniter.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.AssetObject.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadAssetTask.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadDependencyAssetTask.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceAgent.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceAgent.WaitingType.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadResourceTaskBase.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.LoadSceneTask.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceLoader.ResourceObject.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceName.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceNameComparer.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceUpdater.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.ResourceUpdater.UpdateInfo.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceManager.VersionListProcessor.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceMode.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateAllCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateChangedEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateStartEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\ResourceUpdateSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\UnloadSceneCallbacks.cs" />
-     <Compile Include="Assets\GameFramework\Resource\UnloadSceneFailureCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\UnloadSceneSuccessCallback.cs" />
-     <Compile Include="Assets\GameFramework\Resource\VersionListUpdateFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Resource\VersionListUpdateSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Scene\ISceneManager.cs" />
-     <Compile Include="Assets\GameFramework\Scene\LoadSceneDependencyAssetEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Scene\LoadSceneFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Scene\LoadSceneSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Scene\LoadSceneUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Scene\SceneManager.cs" />
-     <Compile Include="Assets\GameFramework\Scene\UnloadSceneFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Scene\UnloadSceneSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Setting\ISettingHelper.cs" />
-     <Compile Include="Assets\GameFramework\Setting\ISettingManager.cs" />
-     <Compile Include="Assets\GameFramework\Setting\SettingManager.cs" />
-     <Compile Include="Assets\GameFramework\Sound\Constant.cs" />
-     <Compile Include="Assets\GameFramework\Sound\ISoundAgent.cs" />
-     <Compile Include="Assets\GameFramework\Sound\ISoundAgentHelper.cs" />
-     <Compile Include="Assets\GameFramework\Sound\ISoundGroup.cs" />
-     <Compile Include="Assets\GameFramework\Sound\ISoundGroupHelper.cs" />
-     <Compile Include="Assets\GameFramework\Sound\ISoundHelper.cs" />
-     <Compile Include="Assets\GameFramework\Sound\ISoundManager.cs" />
-     <Compile Include="Assets\GameFramework\Sound\PlaySoundDependencyAssetEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Sound\PlaySoundErrorCode.cs" />
-     <Compile Include="Assets\GameFramework\Sound\PlaySoundFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Sound\PlaySoundParams.cs" />
-     <Compile Include="Assets\GameFramework\Sound\PlaySoundSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Sound\PlaySoundUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Sound\ResetSoundAgentEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\Sound\SoundManager.cs" />
-     <Compile Include="Assets\GameFramework\Sound\SoundManager.PlaySoundInfo.cs" />
-     <Compile Include="Assets\GameFramework\Sound\SoundManager.SoundAgent.cs" />
-     <Compile Include="Assets\GameFramework\Sound\SoundManager.SoundGroup.cs" />
-     <Compile Include="Assets\GameFramework\UI\CloseUIFormCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\UI\IUIForm.cs" />
-     <Compile Include="Assets\GameFramework\UI\IUIFormHelper.cs" />
-     <Compile Include="Assets\GameFramework\UI\IUIGroup.cs" />
-     <Compile Include="Assets\GameFramework\UI\IUIGroupHelper.cs" />
-     <Compile Include="Assets\GameFramework\UI\IUIManager.cs" />
-     <Compile Include="Assets\GameFramework\UI\OpenUIFormDependencyAssetEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\UI\OpenUIFormFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\UI\OpenUIFormSuccessEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\UI\OpenUIFormUpdateEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\UI\UIManager.cs" />
-     <Compile Include="Assets\GameFramework\UI\UIManager.OpenUIFormInfo.cs" />
-     <Compile Include="Assets\GameFramework\UI\UIManager.UIFormInstanceObject.cs" />
-     <Compile Include="Assets\GameFramework\UI\UIManager.UIGroup.cs" />
-     <Compile Include="Assets\GameFramework\UI\UIManager.UIGroup.UIFormInfo.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Assembly.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Converter.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Encryption.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Json.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Json.IJsonHelper.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Nullable.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Path.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Profiler.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Profiler.IProfilerHelper.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Random.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Text.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Utility.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Verifier.Crc32.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Verifier.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Zip.cs" />
-     <Compile Include="Assets\GameFramework\Utility\Zip.IZipHelper.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\IWebRequestAgentHelper.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\IWebRequestManager.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestAgentHelperCompleteEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestAgentHelperErrorEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestFailureEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestManager.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestManager.WebRequestAgent.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestManager.WebRequestTask.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestManager.WebRequestTaskStatus.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestStartEventArgs.cs" />
-     <Compile Include="Assets\GameFramework\WebRequest\WebRequestSuccessEventArgs.cs" />
-     <None Include="Assets\GameFramework\GameFramework.asmdef" />
-     <None Include="Assets\GameFramework\Configs\AssetBundleBuilder.xml" />
-     <None Include="Assets\GameFramework\Configs\AssetBundleCollection.xml" />
-     <None Include="Assets\GameFramework\Configs\AssetBundleEditor.xml" />
- <Reference Include="UnityEngine.AIModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ARModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AccessibilityModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AnimationModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AssetBundleModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AudioModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.BaselibModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ClothModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CloudWebServicesModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ClusterInputModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ClusterRendererModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CoreModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CrashReportingModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.DirectorModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.FacebookModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GameCenterModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GridModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HotReloadModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.IMGUIModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ImageConversionModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.InputModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.JSONSerializeModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ParticleSystemModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ParticlesLegacyModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PerformanceReportingModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PhysicsModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Physics2DModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ScreenCaptureModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SharedInternalsModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTrackingModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpriteMaskModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpriteShapeModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StyleSheetsModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SubstanceModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TLSModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TerrainModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TerrainPhysicsModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TextRenderingModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TilemapModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TimelineModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIElementsModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UNETModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UmbraModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityAnalyticsModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityConnectModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestAudioModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestTextureModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestWWWModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VRModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VehiclesModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VideoModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.WebModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.WindModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.XRModule">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Locator">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/Unity.Locator.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Networking">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Timeline">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Timeline">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TreeEditor">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIAutomation">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UIAutomation">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.GoogleAudioSpatializer">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GoogleAudioSpatializer">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.HoloLens">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.VR">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Graphs">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.WebGL.Extensions">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="LitJson">
- <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/Libraries/LitJson.dll</HintPath>
- </Reference>
- <Reference Include="protobuf-net">
- <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/Libraries/protobuf-net.dll</HintPath>
- </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>C:/Users/mutou/Documents/Unity3D/gameframework_demo/Assets/UnityGameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Advertisements">
- <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Analytics">
- <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Purchasing">
- <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StandardEvents">
- <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="mscorlib">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
- </Reference>
- <Reference Include="System">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
- </Reference>
- <Reference Include="System.Core">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.Linq">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
- </Reference>
- <Reference Include="UnityScript">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
- </Reference>
- <Reference Include="UnityScript.Lang">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
- </Reference>
- <Reference Include="Boo.Lang">
- <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\GameFrameworkRes\Base\EventPool\BaseEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\EventPool\EventPool.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\EventPool\EventPool.Event.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\EventPool\EventPoolMode.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\GameFrameworkAction.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\GameFrameworkEntry.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\GameFrameworkEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\GameFrameworkException.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\GameFrameworkFunc.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\GameFrameworkModule.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\Log\GameFrameworkLog.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\Log\GameFrameworkLog.ILogHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\Log\GameFrameworkLogLevel.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\ReferencePool\IReference.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\ReferencePool\ReferencePool.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\ReferencePool\ReferencePool.ReferenceCollection.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\ReferencePool\ReferencePoolInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\TaskPool\ITask.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\TaskPool\ITaskAgent.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\TaskPool\TaskPool.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\Variable\GenericVariable.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\Variable\Variable.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\Version\Version.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Base\Version\Version.IVersionHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Config\ConfigManager.ConfigData.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Config\ConfigManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Config\IConfigHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Config\IConfigManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Config\LoadConfigDependencyAssetEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Config\LoadConfigFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Config\LoadConfigSuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Config\LoadConfigUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataNode\DataNodeManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataNode\DataNodeManager.DataNode.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataNode\IDataNode.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataNode\IDataNodeManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\DataTableBase.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\DataTableManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\DataTableManager.DataTable.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\IDataRow.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\IDataTable.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\IDataTableHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\IDataTableManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\LoadDataTableDependencyAssetEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\LoadDataTableFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\LoadDataTableSuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\DataTable\LoadDataTableUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Debugger\DebuggerManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Debugger\DebuggerManager.DebuggerWindowGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Debugger\IDebuggerManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Debugger\IDebuggerWindow.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Debugger\IDebuggerWindowGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\Constant.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadAgentHelperCompleteEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadAgentHelperErrorEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadAgentHelperUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadManager.DownloadAgent.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadManager.DownloadCounter.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadManager.DownloadCounter.DownloadCounterNode.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadManager.DownloadTask.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadManager.DownloadTaskStatus.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadStartEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadSuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\DownloadUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\IDownloadAgentHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Download\IDownloadManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\EntityManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\EntityManager.EntityGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\EntityManager.EntityInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\EntityManager.EntityInstanceObject.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\EntityManager.EntityStatus.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\EntityManager.ShowEntityInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\HideEntityCompleteEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\IEntity.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\IEntityGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\IEntityGroupHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\IEntityHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\IEntityManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\ShowEntityDependencyAssetEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\ShowEntityFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\ShowEntitySuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Entity\ShowEntityUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Event\EventManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Event\GameEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Event\IEventManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Fsm\Fsm.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Fsm\FsmBase.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Fsm\FsmEventHandler.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Fsm\FsmManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Fsm\FsmState.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Fsm\IFsm.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Fsm\IFsmManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Localization\ILocalizationHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Localization\ILocalizationManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Localization\Language.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Localization\LoadDictionaryDependencyAssetEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Localization\LoadDictionaryFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Localization\LoadDictionarySuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Localization\LoadDictionaryUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Localization\LocalizationManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\INetworkChannel.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\INetworkChannelHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\INetworkManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\IPacketHandler.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\IPacketHeader.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkClosedEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkConnectedEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkCustomErrorEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkErrorCode.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkErrorEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkManager.NetworkChannel.ConnectState.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkManager.NetworkChannel.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkManager.NetworkChannel.HeartBeatState.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkManager.NetworkChannel.ReceiveState.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkManager.NetworkChannel.SendState.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkMissHeartBeatEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\NetworkType.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Network\Packet.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\IObjectPool.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\IObjectPoolManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\ObjectBase.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\ObjectInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\ObjectPoolBase.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\ObjectPoolManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\ObjectPoolManager.Object.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\ObjectPoolManager.ObjectPool.cs" />
+    <Compile Include="Assets\GameFrameworkRes\ObjectPool\ReleaseObjectFilterCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Procedure\IProcedureManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Procedure\ProcedureBase.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Procedure\ProcedureManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\CheckResourcesCompleteCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\CheckVersionListResult.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\Constant.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\DecryptResourceCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ILoadResourceAgentHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\InitResourcesCompleteCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\IResourceHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\IResourceManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadAssetCallbacks.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadAssetDependencyAssetCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadAssetFailureCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadAssetSuccessCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadAssetUpdateCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadBytesCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadResourceAgentHelperErrorEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadResourceAgentHelperLoadCompleteEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadResourceAgentHelperParseBytesCompleteEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadResourceAgentHelperReadBytesCompleteEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadResourceAgentHelperReadFileCompleteEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadResourceAgentHelperUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadResourceProgress.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadResourceStatus.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadSceneCallbacks.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadSceneDependencyAssetCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadSceneFailureCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadSceneSuccessCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\LoadSceneUpdateCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.AssetDependencyInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.AssetInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.LoadType.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ReadWriteResourceInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceChecker.CheckInfo.CheckStatus.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceChecker.CheckInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceChecker.CheckInfo.LocalVersionInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceChecker.CheckInfo.RemoteVersionInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceChecker.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceIniter.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.AssetObject.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.LoadAssetTask.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.LoadDependencyAssetTask.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.LoadResourceAgent.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.LoadResourceAgent.WaitingType.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.LoadResourceTaskBase.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.LoadSceneTask.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceLoader.ResourceObject.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceName.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceNameComparer.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceUpdater.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.ResourceUpdater.UpdateInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceManager.VersionListProcessor.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceMode.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceUpdateChangedEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceUpdateFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceUpdateStartEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\ResourceUpdateSuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\UnloadSceneCallbacks.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\UnloadSceneFailureCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\UnloadSceneSuccessCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\UpdateResourcesCompleteCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\UpdateVersionListCallbacks.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\UpdateVersionListFailureCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Resource\UpdateVersionListSuccessCallback.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Scene\ISceneManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Scene\LoadSceneDependencyAssetEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Scene\LoadSceneFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Scene\LoadSceneSuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Scene\LoadSceneUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Scene\SceneManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Scene\UnloadSceneFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Scene\UnloadSceneSuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Setting\ISettingHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Setting\ISettingManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Setting\SettingManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\Constant.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\ISoundAgent.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\ISoundAgentHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\ISoundGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\ISoundGroupHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\ISoundHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\ISoundManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\PlaySoundDependencyAssetEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\PlaySoundErrorCode.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\PlaySoundFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\PlaySoundParams.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\PlaySoundSuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\PlaySoundUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\ResetSoundAgentEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\SoundManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\SoundManager.PlaySoundInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\SoundManager.SoundAgent.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Sound\SoundManager.SoundGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\CloseUIFormCompleteEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\IUIForm.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\IUIFormHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\IUIGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\IUIGroupHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\IUIManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\OpenUIFormDependencyAssetEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\OpenUIFormFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\OpenUIFormSuccessEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\OpenUIFormUpdateEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\UIManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\UIManager.OpenUIFormInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\UIManager.UIFormInstanceObject.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\UIManager.UIGroup.cs" />
+    <Compile Include="Assets\GameFrameworkRes\UI\UIManager.UIGroup.UIFormInfo.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Assembly.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Converter.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Encryption.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Json.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Json.IJsonHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Nullable.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Path.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Profiler.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Profiler.IProfilerHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Random.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Text.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Verifier.Crc32.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Verifier.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Zip.cs" />
+    <Compile Include="Assets\GameFrameworkRes\Utility\Utility.Zip.IZipHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\Constant.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\IWebRequestAgentHelper.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\IWebRequestManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestAgentHelperCompleteEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestAgentHelperErrorEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestFailureEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestManager.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestManager.WebRequestAgent.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestManager.WebRequestTask.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestManager.WebRequestTaskStatus.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestStartEventArgs.cs" />
+    <Compile Include="Assets\GameFrameworkRes\WebRequest\WebRequestSuccessEventArgs.cs" />
+    <None Include="Assets\GameFrameworkRes\GameFramework.asmdef" />
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTrackingModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>C:/Mutou/Unity3D/gameframework_demo/Assets/Libraries/LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>C:/Mutou/Unity3D/gameframework_demo/Assets/Libraries/protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/mutou/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:/Mutou/Unity3D/gameframework_demo/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -618,5 +633,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

@@ -7,45 +7,46 @@ using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-public class Demo9_ProcedureLaunch : ProcedureBase {
-	private bool m_ResourceInitComplete = false;
+public class Demo9_ProcedureLaunch : ProcedureBase
+{
+    private bool m_ResourceInitComplete = false;
 
-	protected override void OnEnter (ProcedureOwner procedureOwner) {
-		base.OnEnter (procedureOwner);
+    protected override void OnEnter (ProcedureOwner procedureOwner)
+    {
+        base.OnEnter(procedureOwner);
 
-		ResourceComponent Resource
-			= UnityGameFramework.Runtime.GameEntry.GetComponent<ResourceComponent> ();
+        ResourceComponent Resource
+            = UnityGameFramework.Runtime.GameEntry.GetComponent<ResourceComponent>();
 
-		// 初始化资源
-		Resource.InitResources ();
+        // 初始化资源
+        Resource.InitResources(() => {
+            OnResourceInitComplete();
+        });
+    }
 
-		EventComponent Event
-			= UnityGameFramework.Runtime.GameEntry.GetComponent<EventComponent> ();
+    protected override void OnUpdate (ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds)
+    {
+        base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
 
-		// 订阅资源初始化成功事件（记得在OnLeave函数里取消订阅，我就不演示了）
-		Event.Subscribe (ResourceInitCompleteEventArgs.EventId, OnResourceInitComplete);
-	}
+        if (!m_ResourceInitComplete)
+        {
+            return;
+        }
 
-	protected override void OnUpdate (ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds) {
-		base.OnUpdate (procedureOwner, elapseSeconds, realElapseSeconds);
+        SceneComponent Scene
+            = UnityGameFramework.Runtime.GameEntry.GetComponent<SceneComponent>();
 
-		if (!m_ResourceInitComplete) {
-			return;
-		}
+        // 切换场景
+        Scene.LoadScene("Assets/Demo9/Demo9_Menu.unity", this);
 
-		SceneComponent Scene
-			= UnityGameFramework.Runtime.GameEntry.GetComponent<SceneComponent> ();
+        // 切换流程
+        ChangeState<Demo9_ProcedureMenu>(procedureOwner);
+    }
 
-		// 切换场景
-		Scene.LoadScene("Assets/Demo9/Demo9_Menu.unity", this);
+    private void OnResourceInitComplete ()
+    {
+        m_ResourceInitComplete = true;
 
-		// 切换流程
-		ChangeState<Demo9_ProcedureMenu>(procedureOwner);
-	}
-
-	private void OnResourceInitComplete (object sender, GameEventArgs e) {
-		m_ResourceInitComplete = true;
-
-		Log.Info ("初始化资源成功");
-	}
+        Log.Info("初始化资源成功");
+    }
 }

@@ -1,8 +1,10 @@
-using GameFramework;
+﻿using GameFramework;
 using GameFramework.Fsm;
 using UnityEngine;
+using UnityGameFramework.Runtime;
 
-public class Demo10_HeroWalkState : FsmState<Demo10_HeroLogic> {
+public class Demo10_HeroWalkState : FsmState<Demo10_HeroLogic>
+{
     /// <summary>
     /// 有限状态机状态初始化时调用。
     /// </summary>
@@ -13,7 +15,8 @@ public class Demo10_HeroWalkState : FsmState<Demo10_HeroLogic> {
     /// 有限状态机状态进入时调用。
     /// </summary>
     /// <param name="fsm">有限状态机引用。</param>
-    protected override void OnEnter (IFsm<Demo10_HeroLogic> fsm) {
+    protected override void OnEnter (IFsm<Demo10_HeroLogic> fsm)
+    {
         Log.Info("进入行走状态");
     }
 
@@ -23,12 +26,16 @@ public class Demo10_HeroWalkState : FsmState<Demo10_HeroLogic> {
     /// <param name="fsm">有限状态机引用。</param>
     /// <param name="elapseSeconds">逻辑流逝时间，以秒为单位。</param>
     /// <param name="realElapseSeconds">真实流逝时间，以秒为单位。</param>
-    protected override void OnUpdate (IFsm<Demo10_HeroLogic> fsm, float elapseSeconds, float realElapseSeconds) {
-        float inputVertical = Input.GetAxis ("Vertical");
-        if (inputVertical != 0) {
+    protected override void OnUpdate (IFsm<Demo10_HeroLogic> fsm, float elapseSeconds, float realElapseSeconds)
+    {
+        float inputVertical = Input.GetAxis("Vertical");
+        if (inputVertical != 0)
+        {
             /* 移动 */
             fsm.Owner.Forward(elapseSeconds * inputVertical);
-        } else {
+        }
+        else
+        {
             /* 站立 */
             ChangeState<Demo10_HeroIdleState>(fsm);
         }
@@ -39,7 +46,8 @@ public class Demo10_HeroWalkState : FsmState<Demo10_HeroLogic> {
     /// </summary>
     /// <param name="fsm">有限状态机引用。</param>
     /// <param name="isShutdown">是否是关闭有限状态机时触发。</param>
-    protected override void OnLeave (IFsm<Demo10_HeroLogic> fsm, bool isShutdown) {
+    protected override void OnLeave (IFsm<Demo10_HeroLogic> fsm, bool isShutdown)
+    {
 
     }
 
@@ -47,8 +55,9 @@ public class Demo10_HeroWalkState : FsmState<Demo10_HeroLogic> {
     /// 有限状态机状态销毁时调用。
     /// </summary>
     /// <param name="fsm">有限状态机引用。</param>
-    protected override void OnDestroy (IFsm<Demo10_HeroLogic> fsm) {
-        base.OnDestroy (fsm);
+    protected override void OnDestroy (IFsm<Demo10_HeroLogic> fsm)
+    {
+        base.OnDestroy(fsm);
     }
 
 }
