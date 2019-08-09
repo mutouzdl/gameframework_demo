@@ -1,9 +1,9 @@
 # gameframework_demo
 基于Unity3D框架Game Framework（ http://gameframework.cn ）的教程和实例
 
-Game Framework 版本：3.1.2
+Game Framework 版本：2019.07.20
 
-Unity3D 版本：2018.1
+Unity3D 版本：2019.2
 
 ## 教程列表：
  - [[Game Framework之StarForce解读]01.StarForce下载运行](http://www.benmutou.com/archives/2473)
